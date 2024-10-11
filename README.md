@@ -1,28 +1,38 @@
+Voici comment vous pouvez mettre à jour votre fichier README en français pour refléter que le frontend est fait avec Angular et le backend avec Node.js :
+
+```markdown
 # depot-direct-app
-Voici la correction : Dépôt de fichiers pour la communauté UdeM
 
-Ce projet a été généré avec [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+Dépôt de fichiers pour la communauté UdeM
 
-## Serveur de développement
+## Frontend
 
-Exécutez `ng serve` pour lancer un serveur de développement. Allez à `http://localhost:4200/`. L'application se rechargera automatiquement si vous modifiez un des fichiers sources.
+Le frontend de cette application est construit avec Angular version 16.2.1. Il fournit une interface conviviale pour le téléchargement de fichiers et d'autres fonctionnalités.
 
-## Génération de code
+## Backend
 
-Exécutez `ng generate component nom-du-composant` pour générer un nouveau composant. Vous pouvez également utiliser `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Le backend est développé avec Node.js et utilise un serveur personnalisé pour gérer les requêtes API et les téléchargements de fichiers.
 
-## Compilation
+### Serveur de développement
 
-Exécutez `ng build` pour compiler le projet. Les artefacts de la compilation seront stockés dans le répertoire `dist/`.
+Pour exécuter le serveur de développement du frontend, utilisez la commande suivante :
 
-## Exécution des tests unitaires
+```bash
+ng serve
+```
 
-Exécutez `ng test` pour lancer les tests unitaires via [Karma](https://karma-runner.github.io).
+Naviguez vers `http://localhost:4200/` pour accéder au frontend. L'application se rechargera automatiquement lorsque vous apporterez des modifications à l'un des fichiers du frontend.
 
-## Exécution des tests de bout en bout
+### Serveur backend
 
-Exécutez `ng e2e` pour exécuter les tests de bout en bout via la plateforme de votre choix. Pour utiliser cette commande, vous devez d'abord ajouter un package qui implémente des capacités de tests de bout en bout.
+Pour démarrer le serveur Node.js backend, utilisez :
 
-## Aide supplémentaire
+```bash
+node server.js
+```
 
-Pour obtenir plus d'aide sur Angular CLI, utilisez `ng help` ou consultez la page [Aperçu et Référence des Commandes Angular CLI](https://angular.io/cli).
+Cela gérera les processus backend, y compris les téléchargements de fichiers et le service des API.
+
+## Build et Tests
+
+Suivez les processus habituels de construction et de tests pour Angular et Node.js, comme mentionné dans les sections ci-dessous.
