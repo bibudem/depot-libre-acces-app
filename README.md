@@ -1,6 +1,4 @@
-Voici comment vous pouvez mettre à jour votre fichier README en français pour refléter que le frontend est fait avec Angular et le backend avec Node.js :
 
-```markdown
 # depot-direct-app
 
 Dépôt de fichiers pour la communauté UdeM
