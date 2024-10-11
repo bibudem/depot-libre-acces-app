@@ -1,0 +1,6 @@
+<div class="upload-container">
+  <h2>Déposez votre fichier ici</h2>
+  <input type="file" (change)="onFileSelected($event)" />
+  <button (click)="onUpload()">Téléverser</button>
+  <p>{{ message }}</p>
+</div>
