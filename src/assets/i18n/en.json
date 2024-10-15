@@ -1,0 +1,14 @@
+{
+  "TITLE": "File Deposit Portal",
+  "FILE_UPLOADER": "Easily share your resources with other UdeM members and the wider community, to collaborate and enhance learning together.",
+  "BROWSE_FILES": "Browse for files",
+  "DRAG_DROP_FILES": "or drag and drop files here to upload",
+  "DROP_FILES": "Drop files to upload",
+  "FILE_LIMIT": "All file formats are allowed, up to 500 MB.",
+  "UPLOAD": "Upload",
+  "CANCEL": "Cancel",
+  "UPLOAD_SUCCESS": "File uploaded successfully!",
+  "UPLOAD_FAILED": "File upload failed!",
+  "NO_FILE_SELECTED": "No file selected!",
+  "SELECTED_FILE": "Selected file: "
+}

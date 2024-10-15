@@ -1,6 +1,40 @@
-<div class="upload-container">
-  <h2>Déposez votre fichier ici</h2>
-  <input type="file" (change)="onFileSelected($event)" />
-  <button (click)="onUpload()">Téléverser</button>
-  <p>{{ message }}</p>
+<div class="container text-center">
+  <h1>{{ 'TITLE' | translate }}</h1>
+  <div class="row">
+    <div class="col-md-10 mx-auto">
+      <section>
+        <h5 class="mb-3 text-grey">{{ 'FILE_UPLOADER' | translate }}</h5>
+        <div id="fileUploader" class="file-uploader p-3 mb-5 mt-2">
+          <div class="icon-container mb-2 mx-auto d-flex justify-content-center align-items-center">
+            <span class="fa-stack fa-lg">
+              <span class="primary-icon fas fa-file-upload fa-stack-2x font-16"></span>
+              <span class="downloading-icon fas fa-chevron-down fa-stack-1x font-16"></span>
+            </span>
+          </div>
+          <div class="file-uploader-body mb-2">
+            <p class="file-upload-instructions font-16">
+              <label for="fileInput" class="file-label">
+                <a>{{ 'BROWSE_FILES' | translate }}</a>
+              </label>
+              <input id="fileInput" type="file" hidden />
+              <span class="hide-non-touch font-16"> {{ 'DRAG_DROP_FILES' | translate }}</span>
+            </p>
+            <p id="fileName" class="file-name font-16 text-primary"></p> <!-- Affichage du nom du fichier -->
+            <p class="drop-cta font-16">{{ 'DROP_FILES' | translate }}</p>
+          </div>
+          <div class="file-uploader-footer">
+            <p><small>{{ 'FILE_LIMIT' | translate }}</small></p>
+          </div>
+
+          <!-- Boutons d'upload et d'annulation -->
+          <div *ngIf="showUploadButtons" class="mt-4">
+            <button id="uploadButton" class="btn btn-primary-bib" (click)="uploadFile()">{{ 'UPLOAD' | translate }}</button>
+            <button (click)="cancelSelection()" class="btn btn-danger-bib ml-2">{{ 'CANCEL' | translate }}</button>
+          </div>
+
+          <p id="uploadMessage" class="upload-success"></p>
+        </div>
+      </section>
+    </div>
+  </div>
 </div>

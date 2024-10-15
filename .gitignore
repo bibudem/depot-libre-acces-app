@@ -42,3 +42,5 @@ testem.log
 Thumbs.db
 # Ignorer le dossier node_modules dans le backend
 backend/node_modules/
+backend/uploads
+/package-lock.json

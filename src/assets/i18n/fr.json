@@ -1,0 +1,14 @@
+{
+  "TITLE": "Portail de dépôt de fichiers",
+  "FILE_UPLOADER": "Partagez facilement vos ressources avec les autres membres de l'UdeM et la communauté au sens large, pour collaborer et enrichir l'apprentissage ensemble.",
+  "BROWSE_FILES": "Parcourir les fichiers",
+  "DRAG_DROP_FILES": "ou faites glisser et déposez des fichiers ici pour les télécharger",
+  "DROP_FILES": "Déposez des fichiers pour télécharger",
+  "FILE_LIMIT": "Tous les formats de fichiers sont autorisés, jusqu'à 500 Mo.",
+  "UPLOAD": "Télécharger",
+  "CANCEL": "Annuler",
+  "UPLOAD_SUCCESS": "Fichier téléchargé avec succès!",
+  "UPLOAD_FAILED": "Échec du téléchargement du fichier!",
+  "NO_FILE_SELECTED": "Aucun fichier sélectionné!",
+  "SELECTED_FILE": "Fichier sélectionné: "
+}

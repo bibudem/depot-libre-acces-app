@@ -1,0 +1,96 @@
+@import 'src/assets/styles/_variables.css';
+html {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  padding: 2vw 1rem;
+  font-size: 1rem;
+  color: var(--baseFont);
+  font-family: 'Inter', sans-serif;
+}
+
+@media screen and (min-width: 61rem) {
+  body {
+    padding: 6vw;
+  }
+}
+
+section {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+small {
+  color: var(--mediumGrey);
+}
+
+/* Css nouveau a partir de la maquette */
+
+.btn-primary-bib {
+  border-radius: 60px;
+  background: var(--primaryColour);
+  color: white;
+  width: 20%;
+}
+
+.btn-danger-bib {
+  border-radius: 60px;
+  background: var(--errorRed);
+  color: white;
+  width: 20%;
+}
+
+/* Définir la police Lora pour tous les titres h1 à h6 */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--darkBlue);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Lora; /* Utilisez Lora pour les titres */
+  font-style: normal;
+  line-height: 120%;
+}
+
+/* Définir la police Figtree pour les paragraphes et autres éléments */
+h5 {
+  color: var(--darkBlue);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Lora;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 36px */
+}
+
+p, span, small {
+  color: var(--darkGrey);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Figtree;
+  font-style: normal;
+  line-height: 120%;
+}
+
+/* Classes pour les tailles de police et couleurs*/
+.font-14 {
+  font-size: 14px;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.text-grey{
+  color: var(--darkGrey);
+}
+
+.text-primary{
+  color: var(--primaryColour);
+}
