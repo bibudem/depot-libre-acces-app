@@ -1,14 +1,21 @@
 {
-  "TITLE": "Portail de dépôt de fichiers",
-  "FILE_UPLOADER": "Partagez facilement vos ressources avec les autres membres de l'UdeM et la communauté au sens large, pour collaborer et enrichir l'apprentissage ensemble.",
+  "TITLE": "Service de dépôt en libre accès",
+  "FILE_UPLOADER": "Déposez les versions acceptées pour publication de vos articles ci-dessous.",
   "BROWSE_FILES": "Parcourir les fichiers",
   "DRAG_DROP_FILES": "ou faites glisser et déposez des fichiers ici pour les télécharger",
   "DROP_FILES": "Déposez des fichiers pour télécharger",
   "FILE_LIMIT": "Tous les formats de fichiers sont autorisés, jusqu'à 500 Mo.",
   "UPLOAD": "Télécharger",
   "CANCEL": "Annuler",
-  "UPLOAD_SUCCESS": "Fichier téléchargé avec succès!",
+  "UPLOAD_SUCCESS": "Merci! Nous avons bien reçu vos fichiers! L’équipe des bibliothèques UdeM vous contactera lorsque vos articles seront publiés en libre accès!",
   "UPLOAD_FAILED": "Échec du téléchargement du fichier!",
   "NO_FILE_SELECTED": "Aucun fichier sélectionné!",
-  "SELECTED_FILE": "Fichier sélectionné: "
+  "SELECTED_FILE": "Fichier sélectionné: ",
+  "ABOUT": "Apropos",
+  "ABOUT_PLUS": "Déposez facilement vos articles en libre accès dans Papyrus. Partagez vos travaux avec la communauté UdeM et contribuez à la diffusion des connaissances. C'est simple et rapide !",
+  "SEEMORE": "Pour en savoir plus :",
+  "LINK_POLITICS": "Politique sur l'accès libre à l'UdeM",
+  "LINK_PAPYRUS": "Découvrez tout sur Papyrus",
+  "LINK_OPEN_ACCESS": "Explorez le libre accès",
+  "LINK_UDEM": "Mon université"
 }

@@ -77,7 +77,7 @@ export class FileUploadComponent implements AfterViewInit {
             setTimeout(() => {
               $('#fileName').text('');
               $('#uploadMessage').text('');
-            }, 5000);
+            }, 10000);
 
           }
         },

@@ -1,0 +1,112 @@
+/* Style pour le footer */
+.footer-dark {
+  background-color: #0B113A;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* Logo à gauche */
+.footer-logo {
+  width: 60px;
+  height: auto;
+}
+
+/* Texte et bouton au centre */
+.footer-center {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.footer-text {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+/* Icônes de réseaux sociaux à droite */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* Alignement du bouton */
+.footer-rigth {
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+}
+
+/* Style du bouton */
+.btn-footer-bib {
+  border-radius: 60px;
+  border: 1px solid white;
+  background-color: #0B113A;
+  color: white;
+  width: 190px;
+  height: 40px;
+  padding: 0px 20px 0px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Style de l'icône SVG */
+.btn-icon svg {
+  width: 18px;
+  height: 18px;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+  fill: white; /* Définit la couleur de la flèche en blanc */
+}
+
+/* Effet hover */
+.btn-footer-bib:hover {
+  background-color: white;
+  color: #0B113A;
+  border: 1px solid #0B113A;
+}
+
+.btn-footer-bib:hover .btn-icon svg {
+  transform: translateY(-4px); /* Déplace légèrement la flèche vers le haut au hover */
+  fill: #0B113A; /* Change la couleur de la flèche au hover */
+}
+
+/* Transition fluide */
+.btn-footer-bib:hover {
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+

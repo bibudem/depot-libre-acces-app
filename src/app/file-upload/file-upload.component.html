@@ -1,26 +1,26 @@
 <div class="container text-center">
-  <h1>{{ 'TITLE' | translate }}</h1>
   <div class="row">
-    <div class="col-md-10 mx-auto">
+    <div class="col-md-10 mx-auto mt-5">
       <section>
+        <h1>{{ 'TITLE' | translate }}</h1>
         <h5 class="mb-3 text-grey">{{ 'FILE_UPLOADER' | translate }}</h5>
-        <div id="fileUploader" class="file-uploader p-3 mb-5 mt-2">
+        <div id="fileUploader" class="file-uploader p-3 mb-5 mt-5">
           <div class="icon-container mb-2 mx-auto d-flex justify-content-center align-items-center">
             <span class="fa-stack fa-lg">
-              <span class="primary-icon fas fa-file-upload fa-stack-2x font-16"></span>
-              <span class="downloading-icon fas fa-chevron-down fa-stack-1x font-16"></span>
+              <span class="primary-icon fas fa-file-upload fa-stack-2x text-lGrey font-42"></span>
+              <span class="downloading-icon fas fa-chevron-down fa-stack-1x text-lGrey font-42"></span>
             </span>
           </div>
           <div class="file-uploader-body mb-2">
-            <p class="file-upload-instructions font-16">
+            <p class="file-upload-instructions">
               <label for="fileInput" class="file-label">
                 <a>{{ 'BROWSE_FILES' | translate }}</a>
               </label>
               <input id="fileInput" type="file" hidden />
-              <span class="hide-non-touch font-16"> {{ 'DRAG_DROP_FILES' | translate }}</span>
+              <span class="hide-non-touch"> {{ 'DRAG_DROP_FILES' | translate }}</span>
             </p>
-            <p id="fileName" class="file-name font-16 text-primary"></p> <!-- Affichage du nom du fichier -->
-            <p class="drop-cta font-16">{{ 'DROP_FILES' | translate }}</p>
+            <p id="fileName" class="file-name text-primary"></p> <!-- Affichage du nom du fichier -->
+            <p class="drop-cta">{{ 'DROP_FILES' | translate }}</p>
           </div>
           <div class="file-uploader-footer">
             <p><small>{{ 'FILE_LIMIT' | translate }}</small></p>

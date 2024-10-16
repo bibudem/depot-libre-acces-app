@@ -1,14 +1,21 @@
 {
-  "TITLE": "File Deposit Portal",
-  "FILE_UPLOADER": "Easily share your resources with other UdeM members and the wider community, to collaborate and enhance learning together.",
-  "BROWSE_FILES": "Browse for files",
+  "TITLE": "Open Access Deposit Service",
+  "FILE_UPLOADER": "Upload the accepted versions of your articles for publication below.",
+  "BROWSE_FILES": "Browse files",
   "DRAG_DROP_FILES": "or drag and drop files here to upload",
   "DROP_FILES": "Drop files to upload",
   "FILE_LIMIT": "All file formats are allowed, up to 500 MB.",
   "UPLOAD": "Upload",
   "CANCEL": "Cancel",
-  "UPLOAD_SUCCESS": "File uploaded successfully!",
+  "UPLOAD_SUCCESS": "Thank you! We have successfully received your files! The UdeM library team will contact you when your articles are published in open access!",
   "UPLOAD_FAILED": "File upload failed!",
   "NO_FILE_SELECTED": "No file selected!",
-  "SELECTED_FILE": "Selected file: "
+  "SELECTED_FILE": "Selected file: ",
+  "ABOUT": "About",
+  "ABOUT_PLUS": "Easily deposit your articles in open access in Papyrus. Share your work with the UdeM community and contribute to the dissemination of knowledge.",
+  "SEEMORE": "Learn more:",
+  "LINK_POLITICS": "UdeM Open Access Policy",
+  "LINK_PAPYRUS": "Find out all about Papyrus",
+  "LINK_OPEN_ACCESS": "Explore Open Access",
+  "LINK_UDEM": "My university"
 }

@@ -1,0 +1,41 @@
+.navbar-dark .navbar-toggler {
+  color: rgba(238, 255, 255, .8) !important;
+  border-color: rgba(238, 255, 255, .3);
+}
+
+ul.menu-items li a{
+  font-size: 13px;
+  color: #8E9299;
+}
+
+ul.menu-items li a:hover{
+  color: #CCE2F3;
+  text-decoration: none;
+}
+
+
+.logo-text {
+  font-family: Lora;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: white;
+  margin-top: 45px;
+  margin-left: 5px;
+}
+.language-selector {
+  font-family: Lora;
+  background: transparent;
+  border: none;
+  color: #eef4f7;
+  outline: none;
+  font-size: 16px;
+}
+
+.language-selector option {
+  font-family: Lora;
+  background: #00407F;
+  color: #eef4f7;
+  font-size: 16px;
+}

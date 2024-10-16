@@ -5,13 +5,15 @@ import {FileUploadComponent} from "./file-upload/file-upload.component";
 import {NgModule} from "@angular/core";
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
 
 @NgModule({
-  declarations: [AppComponent, FileUploadComponent],
+  declarations: [AppComponent, FileUploadComponent, HeaderComponent, FooterComponent],
   imports: [
     BrowserModule,
     HttpClientModule,

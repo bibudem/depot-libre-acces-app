@@ -5,23 +5,20 @@ html {
 
 @media screen and (min-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
 body {
-  padding: 2vw 1rem;
   font-size: 1rem;
   color: var(--baseFont);
-  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding-bottom: 80px;
+  box-sizing: border-box;
 }
-
-@media screen and (min-width: 61rem) {
-  body {
-    padding: 6vw;
-  }
+header {
+  background: #747E88!important;
 }
-
 section {
   padding-top: 1vh;
   padding-bottom: 1vh;
@@ -46,6 +43,8 @@ small {
   color: white;
   width: 20%;
 }
+
+
 
 /* Définir la police Lora pour tous les titres h1 à h6 */
 h1, h2, h3, h4, h5, h6 {
@@ -87,10 +86,34 @@ p, span, small {
   font-size: 16px;
 }
 
+.font-42 {
+  font-size: 42px;
+}
+
 .text-grey{
   color: var(--darkGrey);
 }
 
 .text-primary{
   color: var(--primaryColour);
+}
+
+.text-lGrey{
+  color: var(--mediumGrey);
+}
+
+.text-llGrey{
+  color: var(--lightGrey);
+}
+
+.text-jaune{
+  color: var(--jaune);
+}
+
+.text-roseDark{
+  color: var(--roseDark);
+}
+
+.bg-darkBlue{
+  background: var(--darkBlue);
 }
