@@ -17,5 +17,9 @@
   "LINK_POLITICS": "UdeM Open Access Policy",
   "LINK_PAPYRUS": "Find out all about Papyrus",
   "LINK_OPEN_ACCESS": "Explore Open Access",
-  "LINK_UDEM": "My university"
+  "LINK_UDEM": "My university",
+  "LOGIN": "Log In",
+  "LOGIN_DESCRIPTION": "Want to submit your article in open access to Papyrus? It's easy! <br>\n First, log in with your UdeM credentials, then submit your articles to us!",
+  "404_TITLE": "Oops! Page Not Found",
+  "404_DESCRIPTION": "Sorry, the page you are looking for is not available. <br>\n Please check the address or return to the homepage to explore more."
 }

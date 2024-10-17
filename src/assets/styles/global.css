@@ -1,4 +1,12 @@
+/*--------------------------------------------------------------
+# Import des fichiers CSS nécessaires
+--------------------------------------------------------------*/
 @import 'src/assets/styles/_variables.css';
+
+/*--------------------------------------------------------------
+# Styles globaux
+--------------------------------------------------------------*/
+/* Définition de la taille de police par défaut en fonction de la taille de l'écran */
 html {
   font-size: 14px;
 }
@@ -9,6 +17,7 @@ html {
   }
 }
 
+/* Style de base pour le corps du document */
 body {
   font-size: 1rem;
   color: var(--baseFont);
@@ -16,68 +25,172 @@ body {
   padding-bottom: 80px;
   box-sizing: border-box;
 }
+
+/* Style global pour l'en-tête */
 header {
   background: #747E88!important;
 }
+
+/* Espacement des sections */
 section {
   padding-top: 1vh;
   padding-bottom: 1vh;
 }
 
+/* Style global pour les petits textes */
 small {
   color: var(--mediumGrey);
 }
 
-/* Css nouveau a partir de la maquette */
-
+/*--------------------------------------------------------------
+# Boutons personnalisés
+--------------------------------------------------------------*/
+/* Style pour les boutons principaux (bleu) */
 .btn-primary-bib {
   border-radius: 60px;
   background: var(--primaryColour);
   color: white;
-  width: 20%;
+  font-family: 'Lora', serif;
+  padding: 10px 20px;
 }
 
+.btn-primary-bib:hover {
+  background: #081b9b;
+}
+
+/* Style pour les boutons d'alerte (rouge) */
 .btn-danger-bib {
   border-radius: 60px;
   background: var(--errorRed);
   color: white;
-  width: 20%;
 }
 
+.btn-danger-bib:hover {
+  background: #e74904;
+}
 
+/* Style pour les boutons gris */
+.btn-gray-bib {
+  border-radius: 60px;
+  background: var(--baseFont);
+  color: white;
+  font-family: 'Lora', serif;
+  padding: 10px 20px;
+}
 
+.btn-gray-bib:hover {
+  background: #494949;
+}
+
+/* Style pour les boutons bleu foncé */
+.btn-darkBlue-bib {
+  border-radius: 60px;
+  background: var(--darkBlue);
+  color: white;
+}
+
+.btn-darkBlue-bib:hover {
+  background: #0a266b;
+}
+
+/*--------------------------------------------------------------
+# Boutons transparents avec bordures colorées
+--------------------------------------------------------------*/
+/* Bouton transparent avec bordure et texte bleu */
+.btn-b-transparent-bib {
+  border-radius: 60px;
+  background: transparent;
+  border-color: var(--primaryColour);
+  color: var(--primaryColour);
+  font-family: 'Lora', serif;
+  padding: 10px 20px;
+}
+
+.btn-b-transparent-bib:hover {
+  background: var(--primaryColour);
+  color: var(--lightGrey);
+}
+
+/* Bouton transparent avec bordure et texte bleu */
+.btn-alert-transparent-bib {
+  border-radius: 60px;
+  background: transparent;
+  border-color: var(--errorRed);
+  color: var(--errorRed);
+  font-family: 'Lora', serif;
+  padding: 10px 20px;
+}
+
+.btn-b-transparent-bib:hover {
+  background: var(--errorRed);
+  color: var(--lightGrey);
+}
+
+/* Bouton transparent avec bordure et texte blanc */
+.btn-w-transparent-bib {
+  border-radius: 60px;
+  background: transparent;
+  border-color: #e8e8e8;
+  color: var(--lightGrey);
+  font-family: 'Lora', serif;
+  padding: 10px 20px;
+}
+
+.btn-w-transparent-bib:hover {
+  background: #e8e8e8;
+  color: var(--primaryColour);
+}
+
+/* Style pour les boutons principaux (yellow) */
+.btn-y-transparent-bib {
+  border-radius: 60px;
+  background: transparent;
+  border-color: var(--jaune);
+  color: var(--jaune);
+  font-family: 'Lora', serif;
+}
+
+.btn-y-transparent-bib:hover {
+  background: var(--jaune);
+  color: white;
+}
+/*--------------------------------------------------------------
+# Styles pour les titres et les textes
+--------------------------------------------------------------*/
 /* Définir la police Lora pour tous les titres h1 à h6 */
 h1, h2, h3, h4, h5, h6 {
   color: var(--darkBlue);
   font-variant-numeric: lining-nums tabular-nums;
   font-feature-settings: 'liga' off, 'clig' off;
-  font-family: Lora; /* Utilisez Lora pour les titres */
+  font-family: 'Lora', serif;
   font-style: normal;
   line-height: 120%;
 }
 
-/* Définir la police Figtree pour les paragraphes et autres éléments */
+/* Style spécifique pour les titres h5 */
 h5 {
-  color: var(--darkBlue);
-  font-variant-numeric: lining-nums tabular-nums;
-  font-feature-settings: 'liga' off, 'clig' off;
-  font-family: Lora;
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 120%; /* 36px */
 }
 
+/* Utiliser la police Figtree pour les paragraphes et autres textes */
 p, span, small {
   color: var(--darkGrey);
-  font-variant-numeric: lining-nums tabular-nums;
-  font-feature-settings: 'liga' off, 'clig' off;
-  font-family: Figtree;
-  font-style: normal;
+  font-family: 'Figtree', sans-serif;
   line-height: 120%;
 }
 
-/* Classes pour les tailles de police et couleurs*/
+/*--------------------------------------------------------------
+# Classes pour les tailles de police
+--------------------------------------------------------------*/
+.font-10 {
+  font-size: 10px;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
 .font-14 {
   font-size: 14px;
 }
@@ -86,34 +199,316 @@ p, span, small {
   font-size: 16px;
 }
 
+.font-18 {
+  font-size: 18px;
+}
+
 .font-42 {
   font-size: 42px;
 }
 
-.text-grey{
+/*--------------------------------------------------------------
+# Couleurs du texte
+--------------------------------------------------------------*/
+.text-grey {
   color: var(--darkGrey);
 }
 
-.text-primary{
+.text-primary {
   color: var(--primaryColour);
 }
 
-.text-lGrey{
+.text-lGrey {
   color: var(--mediumGrey);
 }
 
-.text-llGrey{
-  color: var(--lightGrey);
-}
-
-.text-jaune{
+.text-jaune {
   color: var(--jaune);
 }
-
-.text-roseDark{
-  color: var(--roseDark);
+.text-alert {
+  color: var(--errorRed);
 }
 
-.bg-darkBlue{
+/*--------------------------------------------------------------
+# Autres styles divers
+--------------------------------------------------------------*/
+/* Largeur de 20% */
+.w-20 {
+  width: 20%;
+}
+
+/* Fond bleu foncé pour les éléments */
+.bg-darkBlue {
   background: var(--darkBlue);
+}
+
+/* Espacement et style pour les menus */
+.toggle-menu-bib {
+  padding: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  border-radius: 12px;
+  background: var(--baseFont);
+  border-color: var(--primaryColour);
+  font-size: 18px;
+}
+
+/* Style pour le bouton avec SVG à l'intérieur */
+.btn-b-transparent-bib svg {
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.btn-b-transparent-bib:hover svg path {
+  fill: #ffffff;
+}
+
+.btn-b-transparent-bib:hover svg {
+  transform: scale(1.3);
+}
+
+.btn-bib {
+  padding: 5px 10px;
+}
+/*--------------------------------------------------------------
+# Styles spécifiques aux pages
+--------------------------------------------------------------*/
+/* Styles pour la page de connexion */
+.custom-section {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+}
+
+.custom-image {
+  padding: 40px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.text-content {
+  padding: 40px;
+}
+
+.custom-title {
+  font-family: 'Lora', serif;
+  font-size: 38px;
+  font-weight: bold;
+  color: #00407F;
+}
+
+.custom-description {
+  font-size: 16px;
+  color: #8E9299;
+  margin-bottom: 20px;
+}
+
+/* Styles pour la page 404 */
+.not-found-section {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+}
+
+.not-found-title {
+  font-size: 38px;
+  color: #00407F;
+  margin-bottom: 20px;
+}
+/* ---------- Styles pour le Header ---------- */
+
+/* Style pour le bouton navbar */
+.navbar-dark .navbar-toggler {
+  color: rgba(238, 255, 255, 0.8) !important;
+  border-color: rgba(238, 255, 255, 0.3);
+  background: transparent;
+  border: none;
+  padding: 5px;
+}
+
+/* Styles pour les éléments du menu */
+ul.menu-items li a {
+  font-size: 13px;
+  color: #8E9299;
+}
+
+ul.menu-items li a:hover {
+  color: #CCE2F3;
+  text-decoration: none;
+}
+
+/* Style pour le texte du logo */
+.logo-text {
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  margin-top: 45px;
+  margin-left: 5px;
+}
+
+/* Sélecteur de langue */
+.language-selector {
+  font-family: 'Lora', serif;
+  background: transparent;
+  border: 1px solid #eef4f7;
+  color: #eef4f7;
+  outline: none;
+  font-size: 16px;
+  margin-left: 10px;
+  border-radius: 60px;
+}
+
+.language-selector option {
+  background: #00407F;
+  color: #eef4f7;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+
+/* Section droite du menu (icône utilisateur, etc.) */
+.menu-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.menu-right .fas.fa-user {
+  color: #eef4f7;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+/* ---------- Styles Responsive pour le Header ---------- */
+
+@media (max-width: 576px) {
+  .logo-text {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  ul.menu-items li a {
+    font-size: 11px;
+  }
+
+  .language-selector {
+    font-size: 14px;
+  }
+
+  .navbar-dark .navbar-toggler {
+    padding: 4px;
+  }
+
+  .navbar-brand {
+    width: 50%;
+  }
+
+  .logo-text {
+    font-size: 11px;
+    margin-top: 20px;
+  }
+
+  .menu-right {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+  }
+
+  .menu-right .fas.fa-user {
+    font-size: 18px;
+  }
+}
+/* ---------- Styles pour le Footer ---------- */
+
+/* Footer avec fond sombre */
+.footer-dark {
+  background-color: #0B113A;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenu du footer centré */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* Logo dans le footer */
+.footer-logo {
+  width: 60px;
+  height: auto;
+}
+
+/* Texte au centre du footer */
+.footer-center {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Icônes des réseaux sociaux à droite */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* ---------- Styles pour les Boutons du Footer ---------- */
+
+/* Bouton du footer */
+.btn-footer-bib {
+  border-radius: 60px;
+  border: 1px solid white;
+  background-color: #0B113A;
+  color: white;
+  height: 40px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Effet hover du bouton */
+.btn-footer-bib:hover {
+  background-color: white;
+  color: #0B113A;
+  border: 1px solid #0B113A;
+}
+
+.btn-footer-bib svg {
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.btn-footer-bib:hover svg {
+  transform: scale(1.3);
+  fill: #0B113A;
 }

@@ -25,16 +25,31 @@
         </svg>
         <span class="logo-text">les bibliothèques</span>
       </a>
-      <!-- Language Selector -->
-      <div class="input-group ml-auto mr-2 " style="width: 100px;">
-        <select class="language-selector" (change)="changeLanguage($event)">
-          <option value="fr">FR</option>
-          <option value="en" >EN</option>
-        </select>
+      <div  class="menu-right">
+        <!-- Single button -->
+        <div class="btn-group pull-right top-head-dropdown">
+          <button type="button" class="btn btn-default dropdown-toggle btn-primary-bib btn-bib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="fas fa-user" ></span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-right toggle-menu-bib text-white text-center">
+            <li>
+                {{ userEmail }}
+            </li>
+            <li class="mt-5"><button class="btn-bib btn-alert-transparent-bib  d-flex" (click)="logout()">Déconnexion <i class='fas fa-sign-out-alt m-1'></i></button></li>
+          </ul>
+        </div>
+        <!-- Language Selector -->
+        <div class="lng-bib input-group ml-auto mr-2">
+          <select class="btn-bib language-selector" (change)="changeLanguage($event)">
+            <option value="fr">FR</option>
+            <option value="en">EN</option>
+          </select>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
     </div>
   </div>
+
 </header>

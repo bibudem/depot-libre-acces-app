@@ -1,5 +1,6 @@
 {
   "TITLE": "Service de dépôt en libre accès",
+  "HOME": "Accueil",
   "FILE_UPLOADER": "Déposez les versions acceptées pour publication de vos articles ci-dessous.",
   "BROWSE_FILES": "Parcourir les fichiers",
   "DRAG_DROP_FILES": "ou faites glisser et déposez des fichiers ici pour les télécharger",
@@ -17,5 +18,9 @@
   "LINK_POLITICS": "Politique sur l'accès libre à l'UdeM",
   "LINK_PAPYRUS": "Découvrez tout sur Papyrus",
   "LINK_OPEN_ACCESS": "Explorez le libre accès",
-  "LINK_UDEM": "Mon université"
+  "LINK_UDEM": "Mon université",
+  "LOGIN": "Se connecter",
+  "LOGIN_DESCRIPTION": "Dépose son article en libre accès dans Papyrus? Rien de plus simple! <br>\n  D’abord, connectez-vous avec vos identifiants UdeM puis confiez-nous vos articles!",
+  "404_TITLE": "Oups ! Page Non Trouvée",
+  "404_DESCRIPTION": "Désolé, la page que vous recherchez n’est pas disponible. <br>\n Veuillez vérifier l’adresse ou revenir à la page d’accueil pour découvrir d’autres informations."
 }

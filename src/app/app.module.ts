@@ -1,3 +1,4 @@
+import { NotFoundComponent } from './not-found/not-found.component';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {AppComponent} from "./app.component";
 import {BrowserModule} from "@angular/platform-browser";
@@ -7,13 +8,15 @@ import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { LoginComponent } from './login/login.component';
+import {AppRoutingModule} from "./app-routing.module";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
 
 @NgModule({
-  declarations: [AppComponent, FileUploadComponent, HeaderComponent, FooterComponent],
+  declarations: [AppComponent, FileUploadComponent, HeaderComponent, FooterComponent, LoginComponent, NotFoundComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -24,7 +27,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient]
       }
     }),
-    // autres modules
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent],

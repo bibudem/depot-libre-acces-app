@@ -1,3 +1,4 @@
+/*src/app/file-upload/file-upload.component.css */
 @import 'src/assets/styles/_variables.css';
 
 .file-uploader {
@@ -94,7 +95,6 @@
   text-align: center;
   display: block;
   transition: 0.22s ease;
-  position: relative;
 }
 
 .file-uploader .file-uploader-body,
@@ -111,10 +111,11 @@
   text-decoration: underline;
 }
 
-.upload-success{
+.upload-success {
   color: var(--warningColor);
   margin-top: 30px;
 }
+
 @keyframes fadeInOutSlideInOut {
   10%, 90% {
     opacity: 1;
@@ -135,3 +136,38 @@
     opacity: 1;
   }
 }
+
+/* Adaptation pour les petits écrans */
+@media (max-width: 576px) {
+  .file-uploader {
+    padding: 20px;
+    border-radius: 4px;
+  }
+
+  .file-uploader .icon-container {
+    width: 48px;
+    height: 48px;
+  }
+
+  .file-uploader .primary-icon {
+    font-size: 24px;
+  }
+
+  .upload-success {
+    margin-top: 20px;
+  }
+
+  .file-uploader .file-uploader-body p {
+    font-size: 0.9em;
+    text-align: center;
+  }
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+}
+
