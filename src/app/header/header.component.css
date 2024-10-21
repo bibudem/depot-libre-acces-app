@@ -1,0 +1,25 @@
+.menu-sidebar {
+  position: fixed;
+  top: 0;
+  right: -350px; /* Menu hors de l'écran */
+  width: 350px;
+  height: 100%;
+  background-color: #0b113af0;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  padding-top: 2%;
+}
+
+.menu-sidebar.menu-open {
+  right: 0;
+}
+
+.menu-items a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menu-items a:hover {
+  color: #71b8e7;
+}

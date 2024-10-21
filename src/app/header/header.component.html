@@ -1,15 +1,15 @@
 <header>
-  <div class="collapse bg-darkBlue" id="navbarHeader">
+  <div id="navbarHeader" class="menu-sidebar bg-darkBlue">
     <div class="container">
       <div class="row">
-        <div class="col-sm-8 col-md-7 py-4">
-          <h6 class="text-jaune">{{ 'ABOUT' | translate }}</h6>
-          <p class="text-lGrey">{{ 'ABOUT_PLUS' | translate }}</p>
+        <div class="col-sm-12 col-md-12 py-4">
+          <h5 class="text-jaune">{{ 'ABOUT' | translate }}</h5>
+          <p class="font-18 text-lGrey">{{ 'ABOUT_PLUS' | translate }}</p>
         </div>
-        <div class="col-sm-4 offset-md-1 py-4">
-          <h6 class="text-jaune">{{ 'SEEMORE' | translate }}</h6>
+        <div class="col-sm-12  py-4">
+          <h5 class="text-jaune">{{ 'SEEMORE' | translate }}</h5>
           <ul class="list-unstyled menu-items">
-            <li><a href="#" class="text-lGrey ">{{ 'LINK_POLITICS' | translate }}</a></li>
+            <li><a href="#" class="text-lGrey">{{ 'LINK_POLITICS' | translate }}</a></li>
             <li><a href="#" class="text-lGrey">{{ 'LINK_PAPYRUS' | translate }}</a></li>
             <li><a href="#" class="text-lGrey">{{ 'LINK_OPEN_ACCESS' | translate }}</a></li>
           </ul>
@@ -45,7 +45,8 @@
             <option value="en">EN</option>
           </select>
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+
+        <button class="navbar-toggler" type="button"  (click)="toggleNavbar()">
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>

@@ -228,7 +228,7 @@ p, span, small {
 }
 
 .text-lGrey {
-  color: var(--mediumGrey);
+  color: var(--lightGrey);
 }
 
 .text-jaune {
@@ -535,4 +535,7 @@ ul.menu-items li a:hover {
 .card {
   border: 1px solid rgb(238, 244, 247);
   background: #EEF4F7;
+}
+.hand-cursor {
+  cursor: pointer; /* Change le curseur en main lors du survol */
 }

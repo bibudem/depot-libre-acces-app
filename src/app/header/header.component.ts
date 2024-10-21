@@ -8,7 +8,6 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class HeaderComponent {
 
-
   constructor(private translate: TranslateService) {
     // Set default language
     this.translate.setDefaultLang('fr');
@@ -17,7 +16,6 @@ export class HeaderComponent {
   showUserInfo: boolean = false;
   userName: string = 'John Doe';
   userEmail: string = 'john.doe@example.com';
-
 
   // Fonction pour basculer l'affichage des infos utilisateur
   toggleUserInfo() {
@@ -39,4 +37,10 @@ export class HeaderComponent {
     }
   }
 
+  toggleNavbar() {
+    const navbar = document.getElementById('navbarHeader');
+    if (navbar) {
+      navbar.classList.toggle('menu-open');  // Ajoute ou retire la classe menu-open
+    }
+  }
 }
