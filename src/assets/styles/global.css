@@ -50,7 +50,6 @@ small {
   border-radius: 60px;
   background: var(--primaryColour);
   color: white;
-  font-family: 'Lora', serif;
   padding: 10px 20px;
 }
 
@@ -74,7 +73,6 @@ small {
   border-radius: 60px;
   background: var(--baseFont);
   color: white;
-  font-family: 'Lora', serif;
   padding: 10px 20px;
 }
 
@@ -102,7 +100,6 @@ small {
   background: transparent;
   border-color: var(--primaryColour);
   color: var(--primaryColour);
-  font-family: 'Lora', serif;
   padding: 10px 20px;
 }
 
@@ -117,11 +114,10 @@ small {
   background: transparent;
   border-color: var(--errorRed);
   color: var(--errorRed);
-  font-family: 'Lora', serif;
   padding: 10px 20px;
 }
 
-.btn-b-transparent-bib:hover {
+.btn-alert-transparent-bib:hover {
   background: var(--errorRed);
   color: var(--lightGrey);
 }
@@ -132,7 +128,6 @@ small {
   background: transparent;
   border-color: #e8e8e8;
   color: var(--lightGrey);
-  font-family: 'Lora', serif;
   padding: 10px 20px;
 }
 
@@ -141,13 +136,27 @@ small {
   color: var(--primaryColour);
 }
 
+/* Bouton transparent avec bordure et texte blanc */
+.btn-g-transparent-bib {
+  border-radius: 60px;
+  background: transparent;
+  border-color: #dee2e6;
+  color: #dee2e6;
+  padding: 10px 20px;
+}
+
+.btn-g-transparent-bib:hover {
+  background: #dee2e6;
+  color: var(--darkBlue);
+}
+
 /* Style pour les boutons principaux (yellow) */
 .btn-y-transparent-bib {
   border-radius: 60px;
   background: transparent;
   border-color: var(--jaune);
   color: var(--jaune);
-  font-family: 'Lora', serif;
+  font-family: 'Lora', sans-serif;
 }
 
 .btn-y-transparent-bib:hover {
@@ -162,7 +171,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--darkBlue);
   font-variant-numeric: lining-nums tabular-nums;
   font-feature-settings: 'liga' off, 'clig' off;
-  font-family: 'Lora', serif;
+  font-family: 'Lora', sans-serif;
   font-style: normal;
   line-height: 120%;
 }
@@ -249,8 +258,7 @@ p, span, small {
   align-items: flex-start;
   gap: 30px;
   border-radius: 12px;
-  background: var(--baseFont);
-  border-color: var(--primaryColour);
+  background: var(--primaryColour);
   font-size: 18px;
 }
 
@@ -264,6 +272,18 @@ p, span, small {
 }
 
 .btn-b-transparent-bib:hover svg {
+  transform: scale(1.3);
+}
+
+.btn-footer-bib svg {
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.btn-footer-bib:hover svg path {
+  fill: #0B113A;
+}
+
+.btn-footer-bib:hover svg {
   transform: scale(1.3);
 }
 
@@ -290,14 +310,13 @@ p, span, small {
 }
 
 .custom-title {
-  font-family: 'Lora', serif;
+  font-family: 'Lora', sans-serif;
   font-size: 38px;
   font-weight: bold;
   color: #00407F;
 }
 
 .custom-description {
-  font-size: 16px;
   color: #8E9299;
   margin-bottom: 20px;
 }
@@ -347,7 +366,7 @@ ul.menu-items li a:hover {
 
 /* Sélecteur de langue */
 .language-selector {
-  font-family: 'Lora', serif;
+  font-family: 'Lora', sans-serif;
   background: transparent;
   border: 1px solid #eef4f7;
   color: #eef4f7;
@@ -511,4 +530,9 @@ ul.menu-items li a:hover {
 .btn-footer-bib:hover svg {
   transform: scale(1.3);
   fill: #0B113A;
+}
+
+.card {
+  border: 1px solid rgb(238, 244, 247);
+  background: #EEF4F7;
 }

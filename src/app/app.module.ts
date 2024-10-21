@@ -10,13 +10,14 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import {AppRoutingModule} from "./app-routing.module";
+import { MaintenanceComponent } from './maintenance/maintenance.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
 
 @NgModule({
-  declarations: [AppComponent, FileUploadComponent, HeaderComponent, FooterComponent, LoginComponent, NotFoundComponent],
+  declarations: [AppComponent, FileUploadComponent, HeaderComponent, FooterComponent, LoginComponent, NotFoundComponent, MaintenanceComponent],
   imports: [
     BrowserModule,
     HttpClientModule,

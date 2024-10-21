@@ -1,0 +1,18 @@
+/* Style de l'icône */
+.maintenance-icon {
+  font-size: 64px;
+  color: #00407F;
+  margin-bottom: 20px;
+}
+
+/* Style d'animation pour l'icône */
+.fa-spin {
+  animation: fa-spin 2s infinite linear;
+}
+
+/* Réglage responsive */
+@media (max-width: 768px) {
+  .maintenance-icon {
+    font-size: 40px;
+  }
+}

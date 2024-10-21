@@ -19,7 +19,11 @@
   "LINK_OPEN_ACCESS": "Explore Open Access",
   "LINK_UDEM": "My university",
   "LOGIN": "Log In",
+  "LOGOUT": "Logout",
   "LOGIN_DESCRIPTION": "Want to submit your article in open access to Papyrus? It's easy! <br>\n First, log in with your UdeM credentials, then submit your articles to us!",
   "404_TITLE": "Oops! Page Not Found",
-  "404_DESCRIPTION": "Sorry, the page you are looking for is not available. <br>\n Please check the address or return to the homepage to explore more."
+  "404_DESCRIPTION": "Sorry, the page you are looking for is not available. <br>\n Please check the address or return to the homepage to explore more.",
+  "MAINTENANCE_TITLE": "Site Under Maintenance",
+  "MAINTENANCE_DESCRIPTION": "We are currently performing maintenance to improve your experience. <br>Thank you for your patience; the site will be back soon.<br>If you have urgent questions, please contact our support at <a href=\"mailto:support@exemple.com\" class=\"btn-link\">support@exemple.com</a>."
+
 }

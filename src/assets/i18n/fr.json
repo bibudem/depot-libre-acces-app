@@ -20,7 +20,10 @@
   "LINK_OPEN_ACCESS": "Explorez le libre accès",
   "LINK_UDEM": "Mon université",
   "LOGIN": "Se connecter",
+  "LOGOUT": "Se déconnecter",
   "LOGIN_DESCRIPTION": "Dépose son article en libre accès dans Papyrus? Rien de plus simple! <br>\n  D’abord, connectez-vous avec vos identifiants UdeM puis confiez-nous vos articles!",
   "404_TITLE": "Oups ! Page Non Trouvée",
-  "404_DESCRIPTION": "Désolé, la page que vous recherchez n’est pas disponible. <br>\n Veuillez vérifier l’adresse ou revenir à la page d’accueil pour découvrir d’autres informations."
+  "404_DESCRIPTION": "Désolé, la page que vous recherchez n’est pas disponible. <br>\n Veuillez vérifier l’adresse ou revenir à la page d’accueil pour découvrir d’autres informations.",
+  "MAINTENANCE_TITLE": "Site en maintenance",
+  "MAINTENANCE_DESCRIPTION": "Nous effectuons actuellement une maintenance pour améliorer votre expérience. <br>Merci de votre patience, le site sera de retour bientôt.<br>Si vous avez des questions urgentes, veuillez contacter notre support à l'adresse <a href=\"mailto:support@exemple.com\" class=\"btn-link\">support@exemple.com</a>."
 }
