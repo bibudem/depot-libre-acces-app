@@ -4,7 +4,7 @@
   right: -350px; /* Menu hors de l'écran */
   width: 350px;
   height: 100%;
-  background-color: #0b113af0;
+  background-color: #004085;
   transition: right 0.3s ease-in-out;
   z-index: 1000;
   padding-top: 2%;
@@ -15,7 +15,6 @@
 }
 
 .menu-items a {
-  color: #cccccc;
   text-decoration: none;
   font-size: 18px;
 }

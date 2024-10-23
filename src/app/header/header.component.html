@@ -3,15 +3,15 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-12 py-4">
-          <h5 class="text-jaune">{{ 'ABOUT' | translate }}</h5>
-          <p class="font-18 text-lGrey">{{ 'ABOUT_PLUS' | translate }}</p>
+          <h5 class="text-white">{{ 'ABOUT' | translate }}</h5>
+          <p class="font-18 text-lblue">{{ 'ABOUT_PLUS' | translate }}</p>
         </div>
         <div class="col-sm-12  py-4">
-          <h5 class="text-jaune">{{ 'SEEMORE' | translate }}</h5>
+          <h5 class="text-white">{{ 'SEEMORE' | translate }}</h5>
           <ul class="list-unstyled menu-items">
-            <li><a href="#" class="text-lGrey">{{ 'LINK_POLITICS' | translate }}</a></li>
-            <li><a href="#" class="text-lGrey">{{ 'LINK_PAPYRUS' | translate }}</a></li>
-            <li><a href="#" class="text-lGrey">{{ 'LINK_OPEN_ACCESS' | translate }}</a></li>
+            <li><a href="#" class="text-lblue">{{ 'LINK_POLITICS' | translate }}</a></li>
+            <li><a href="#" class="text-lblue">{{ 'LINK_PAPYRUS' | translate }}</a></li>
+            <li><a href="#" class="text-lblue">{{ 'LINK_OPEN_ACCESS' | translate }}</a></li>
           </ul>
         </div>
       </div>
@@ -35,7 +35,9 @@
             <li>
                 {{ userEmail }}
             </li>
-            <li class="mt-4"><button class="btn-bib btn-g-transparent-bib  d-flex" (click)="logout()">{{ 'LOGOUT' | translate }} <i class='fas fa-sign-out-alt m-1'></i></button></li>
+            <li class="mt-4">
+              <a class="btn-bib btn-darkBlue-bib font-14" (click)="logout()">{{ 'LOGOUT' | translate }} <i class='fas fa-sign-out-alt m-1'></i></a>
+            </li>
           </ul>
         </div>
         <!-- Language Selector -->
