@@ -265,12 +265,12 @@ p, span, small {
 
 /* Espacement et style pour les menus */
 .toggle-menu-bib {
-  padding: 40px;
+  padding: 25px;
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
   border-radius: 12px;
-  background: var(--primaryColour);
+  background: #E5F0F8;
   font-size: 18px;
 }
 
@@ -342,16 +342,6 @@ p, span, small {
   background: transparent;
   border: none;
   padding: 5px;
-}
-
-/* Style pour le texte du logo */
-.logo-text {
-  font-family: 'Lora', serif;
-  font-size: 18px;
-  font-weight: 500;
-  color: white;
-  margin-top: 45px;
-  margin-left: 5px;
 }
 
 /* Sélecteur de langue */

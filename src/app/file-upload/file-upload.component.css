@@ -8,6 +8,7 @@
   transition: 0.22s ease;
   position: relative;
   font-weight: 500;
+  min-height: 300px;
 }
 
 .file-uploader .primary-icon {
