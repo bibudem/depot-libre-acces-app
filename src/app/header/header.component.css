@@ -1,24 +1,52 @@
-.menu-sidebar {
-  position: fixed;
-  top: 0;
-  right: -350px; /* Menu hors de l'écran */
-  width: 350px;
-  height: 100%;
-  background-color: #004085;
-  transition: right 0.3s ease-in-out;
-  z-index: 1000;
-  padding-top: 2%;
-}
-
-.menu-sidebar.menu-open {
-  right: 0;
-}
 
 .menu-items a {
   text-decoration: none;
   font-size: 18px;
 }
 
-.menu-items a:hover {
-  color: #71b8e7;
+a.hand-cursor:hover {
+  color: #fa8275;
+}
+.banner {
+  background-image: url('src/assets/images/banier.png');
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Figtree;
+  font-size: 110px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 112%;
+  padding-bottom: 10px;
+}
+
+.banner-content h1 {
+  font-size: 2.5rem; /* Ajustez la taille */
+  margin: 0;
+}
+
+.banner-content p {
+  font-size: 1.2rem; /* Ajustez la taille */
+  margin-top: 10px;
+}
+
+.navbar {
+  background-color: #fff; /* Couleur de fond de la navbar */
+  padding: 1rem;
+}
+
+/* Style pour le texte du logo */
+.logo-text {
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(38, 37, 37);
+  margin-top: 45px;
+  margin-left: 5px;
 }
