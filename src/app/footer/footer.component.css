@@ -1,0 +1,134 @@
+/* Styles pour le footer */
+.footer-section {
+  background-color: #0B113A;
+  position: relative;
+  overflow: hidden;
+  z-index: 9;
+  font-size: 14px;
+  color: #CCE2F3;
+  font-weight: 400;
+  line-height: 180%;
+}
+
+.footer-section:before, .footer-section:after {
+  content: '';
+  position: absolute;
+  z-index: -10;
+}
+
+.footer-section:before {
+  top: -146%;
+  left: -18%;
+  width: 44%;
+  height: 257%;
+  transform: rotate(54deg);
+}
+
+.footer-section:after {
+  top: -24%;
+  right: 4%;
+  width: 26%;
+  height: 264%;
+  transform: rotate(44deg);
+}
+
+.footer-top {
+  padding: 60px 0 40px;
+}
+
+.footer-top .widget-title {
+  font-size: 16px;
+  color: #CCE2F3;
+  margin-bottom: 20px;
+}
+
+.footer-top p,
+.footer-top .menu-items li {
+  color: #CCE2F3;
+}
+
+.footer-top .menu-items li {
+  margin-bottom: 8px;
+}
+
+.footer-top .menu-items li a {
+  color: #CCE2F3;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-top .menu-items li a:hover {
+  color: #1189d5;
+}
+
+.footer-top .menu-items li img {
+  width: 16px;
+  margin-right: 8px;
+}
+
+.footer-top p a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  background-color: #0057AC;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom .copy-right-text {
+  font-size: 14px;
+  color: #CCE2F3;
+  margin-top: 20px;
+}
+
+.footer-bottom .terms-privacy {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-bottom .terms-privacy li {
+  margin: 0 15px;
+}
+
+.footer-bottom .terms-privacy li a {
+  color: #CCE2F3;
+  text-decoration: none;
+}
+
+.footer-bottom .terms-privacy li a:hover {
+  color: #1189d5;
+}
+
+.img-footer {
+  width: 120%;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+  .footer-top {
+    padding: 40px 0;
+  }
+
+  .footer-top .widget-title {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+
+  .footer-bottom .copy-right-text, .footer-bottom .terms-privacy li {
+    font-size: 13px;
+  }
+
+  .footer-bottom .terms-privacy {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-bottom .terms-privacy li {
+    margin: 5px 0;
+  }
+}

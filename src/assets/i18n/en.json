@@ -24,6 +24,23 @@
   "404_TITLE": "Oops! Page Not Found",
   "404_DESCRIPTION": "Sorry, the page you are looking for is not available. <br>\n Please check the address or return to the homepage to explore more.",
   "MAINTENANCE_TITLE": "Site Under Maintenance",
-  "MAINTENANCE_DESCRIPTION": "We are currently performing maintenance to improve your experience. <br>Thank you for your patience; the site will be back soon.<br>If you have urgent questions, please contact our support at <a href=\"mailto:support@exemple.com\" class=\"btn-link\">support@exemple.com</a>."
+  "MAINTENANCE_DESCRIPTION": "We are currently performing maintenance to improve your experience. <br>Thank you for your patience; the site will be back soon.<br>If you have urgent questions, please contact our support at <a href=\"mailto:support@exemple.com\" class=\"btn-link\">support@exemple.com</a>.",
+  "FOOTER": {
+    "CONTACT_US": "Contact Us",
+    "CHAT_WITH_US": "Chat with us",
+    "WRITE_TO_US": "Write to us",
+    "PHONE": "514 343-7643",
+    "EMERGENCY": "Emergency 514 343-7771",
+    "ABOUT": "About",
+    "ABOUT_PLUS": "Additional information about us.",
+    "SEEMORE": "See more",
+    "LINK_POLITICS": "Politics",
+    "LINK_PAPYRUS": "Papyrus",
+    "LINK_OPEN_ACCESS": "Open access",
+    "COPYRIGHT_TEXT": "© Université de Montréal, 2025. All rights reserved",
+    "PRIVACY": "Privacy",
+    "TERMS_OF_USE": "Terms of use",
+    "COOKIE_SETTINGS": "Cookie settings"
+  }
 
 }

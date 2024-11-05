@@ -25,5 +25,22 @@
   "404_TITLE": "Oups ! Page Non Trouvée",
   "404_DESCRIPTION": "Désolé, la page que vous recherchez n’est pas disponible. <br>\n Veuillez vérifier l’adresse ou revenir à la page d’accueil pour découvrir d’autres informations.",
   "MAINTENANCE_TITLE": "Site en maintenance",
-  "MAINTENANCE_DESCRIPTION": "Nous effectuons actuellement une maintenance pour améliorer votre expérience. <br>Merci de votre patience, le site sera de retour bientôt.<br>Si vous avez des questions urgentes, veuillez contacter notre support à l'adresse <a href=\"mailto:support@exemple.com\" class=\"btn-link\">support@exemple.com</a>."
+  "MAINTENANCE_DESCRIPTION": "Nous effectuons actuellement une maintenance pour améliorer votre expérience. <br>Merci de votre patience, le site sera de retour bientôt.<br>Si vous avez des questions urgentes, veuillez contacter notre support à l'adresse <a href=\"mailto:support@exemple.com\" class=\"btn-link\">support@exemple.com</a>.",
+  "FOOTER": {
+    "CONTACT_US": "Nous joindre",
+    "CHAT_WITH_US": "Clavarder avec nous",
+    "WRITE_TO_US": "Nous écrire",
+    "PHONE": "514 343-7643",
+    "EMERGENCY": "Urgence 514 343-7771",
+    "ABOUT": "À propos",
+    "ABOUT_PLUS": "Déposez facilement vos articles en libre accès dans Papyrus. Partagez vos travaux avec la communauté UdeM et contribuez à la diffusion des connaissances. C'est simple et rapide !",
+    "SEEMORE": "Pour en savoir plus",
+    "LINK_POLITICS": "Politique sur l'accès libre à l'UdeM",
+    "LINK_PAPYRUS": "Découvrez tout sur Papyrus",
+    "LINK_OPEN_ACCESS": "Explorez le libre accès",
+    "COPYRIGHT_TEXT": "© Université de Montréal, 2025. Tous droits réservés",
+    "PRIVACY": "Confidentialité",
+    "TERMS_OF_USE": "Condition d’utilisation",
+    "COOKIE_SETTINGS": "Paramètres des témoins"
+  }
 }
