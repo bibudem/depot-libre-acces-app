@@ -333,7 +333,16 @@ p, span, small {
   color: #0057AC;
   margin-bottom: 20px;
 }
-/* ---------- Styles pour le Header ---------- */
+
+/* ---------- Styles pour le footer ---------- */
+.link-footer a {
+  color: #CCE2F3!important;
+  text-decoration: none!important;
+}
+
+.link-footer a:hover {
+  color: #87c2e8 !important;
+}
 
 /* Style pour le bouton navbar */
 .navbar-dark .navbar-toggler {

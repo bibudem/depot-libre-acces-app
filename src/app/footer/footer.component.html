@@ -29,9 +29,9 @@
           <div class="widget newsletter-widget">
             <h5 class="widget-title">{{ 'FOOTER.SEEMORE' | translate }}</h5>
             <ul class="list-unstyled menu-items">
-              <li [innerHTML]="'FOOTER.LINK_POLITICS' | translate"></li>
-              <li [innerHTML]="'FOOTER.LINK_PAPYRUS' | translate"></li>
-              <li [innerHTML]="'FOOTER.LINK_OPEN_ACCESS' | translate"></li>
+              <li class="link-footer"  [innerHTML]="'FOOTER.LINK_POLITICS' | translate"></li>
+              <li class="link-footer" [innerHTML]="'FOOTER.LINK_PAPYRUS' | translate"></li>
+              <li class="link-footer" [innerHTML]="'FOOTER.LINK_OPEN_ACCESS' | translate"></li>
             </ul>
           </div>
         </div>
@@ -48,12 +48,12 @@
           <span class="copy-right-text" [innerHTML]="'FOOTER.COPYRIGHT_TEXT' | translate"></span>
         </div>
         <div class="col-md-6 col-sm-6">
-          <ul class="terms-privacy d-flex justify-content-sm-end justify-content-center">
-            <li [innerHTML]="'FOOTER.PRIVACY' | translate"></li>
+          <ul class="terms-privacy d-flex justify-content-sm-end justify-content-center list-unstyled">
+            <li class="link-footer" [innerHTML]="'FOOTER.PRIVACY' | translate"></li>
             <li> | </li>
-            <li [innerHTML]="'FOOTER.TERMS_OF_USE' | translate"></li>
+            <li class="link-footer" [innerHTML]="'FOOTER.TERMS_OF_USE' | translate"></li>
             <li> | </li>
-            <li [innerHTML]="'FOOTER.COOKIE_SETTINGS' | translate"></li>
+            <li class="link-footer" [innerHTML]="'FOOTER.COOKIE_SETTINGS' | translate"></li>
           </ul>
         </div>
       </div>
