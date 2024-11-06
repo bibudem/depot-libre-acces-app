@@ -1,5 +1,6 @@
 {
-  "TITLE": "Service de dépôt en libre accès",
+  "PROJECT_TITLE": "DépôtLibreAccès",
+  "TITLE": "Dépôt en libre accès",
   "HOME": "Accueil",
   "FILE_UPLOADER": "Déposez les versions acceptées pour publication de vos articles ci-dessous.",
   "BROWSE_FILES": "Parcourir les fichiers",
@@ -12,7 +13,7 @@
   "UPLOAD_FAILED": "Échec du téléchargement du fichier!",
   "NO_FILE_SELECTED": "Aucun fichier sélectionné!",
   "SELECTED_FILE": "Fichier sélectionné: ",
-  "ABOUT": "Apropos",
+  "ABOUT": "À propos",
   "ABOUT_PLUS": "Déposez facilement vos articles en libre accès dans Papyrus. Partagez vos travaux avec la communauté UdeM et contribuez à la diffusion des connaissances. C'est simple et rapide !",
   "SEEMORE": "Pour en savoir plus :",
   "LINK_POLITICS": "Politique sur l'accès libre à l'UdeM",
@@ -20,6 +21,7 @@
   "LINK_OPEN_ACCESS": "Explorez le libre accès",
   "LINK_UDEM": "Mon université",
   "LOGIN": "Se connecter",
+  "LOGIN_TITLE": "Service de dépôt en libre accès",
   "LOGOUT": "Se déconnecter",
   "LOGIN_DESCRIPTION": "Dépose son article en libre accès dans Papyrus? Rien de plus simple! <br>\n  D’abord, connectez-vous avec vos identifiants UdeM puis confiez-nous vos articles!",
   "404_TITLE": "Oups ! Page Non Trouvée",
@@ -35,12 +37,12 @@
     "ABOUT": "À propos",
     "ABOUT_PLUS": "Déposez facilement vos articles en libre accès dans Papyrus. Partagez vos travaux avec la communauté UdeM et contribuez à la diffusion des connaissances. C'est simple et rapide !",
     "SEEMORE": "Pour en savoir plus",
-    "LINK_POLITICS": "Politique sur l'accès libre à l'UdeM",
-    "LINK_PAPYRUS": "Découvrez tout sur Papyrus",
-    "LINK_OPEN_ACCESS": "Explorez le libre accès",
+    "LINK_POLITICS": " <a href=\"https://bib.umontreal.ca/gerer-diffuser/libre-acces/politique/#:~:text=Le%20mouvement%20de%20libre%20acc%C3%A8s,pour%20l'acc%C3%A8s%20au%20savoir.\"  target=\"_blank\"> Politique sur l'accès libre à l'UdeM</a>",
+    "LINK_PAPYRUS": "<a href=\"https://bib.umontreal.ca/guides/bd/depot-institutionnel-papyrus\"  target=\"_blank\"> Découvrez tout sur Papyrus</a>",
+    "LINK_OPEN_ACCESS": "<a href=\"https://bib.umontreal.ca/gerer-diffuser/libre-acces\"  target=\"_blank\"> Explorez le libre accès</a>",
     "COPYRIGHT_TEXT": "© Université de Montréal, 2025. Tous droits réservés",
-    "PRIVACY": "Confidentialité",
-    "TERMS_OF_USE": "Condition d’utilisation",
-    "COOKIE_SETTINGS": "Paramètres des témoins"
+    "PRIVACY": "<a href=\"https://vie-privee.umontreal.ca/confidentialite/\"  target=\"_blank\"> Confidentialité</a>",
+    "TERMS_OF_USE": "<a href=\"https://vie-privee.umontreal.ca/conditions-dutilisation/\"  target=\"_blank\"> Condition d’utilisation</a>",
+    "COOKIE_SETTINGS": "<a href=\"https://vie-privee.umontreal.ca/conditions-dutilisation/\"  target=\"_blank\"> Paramètres des témoins</a>"
   }
 }
