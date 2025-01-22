@@ -2,36 +2,29 @@
   <div class="footer-top">
     <div class="container">
       <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="widget latest-news-widget">
+            <h5 class="widget-title">{{ 'FOOTER.ABOUT' | translate }}</h5>
+            <div [innerHTML]="'FOOTER.ABOUT_PLUS' | translate"></div>
+          </div>
+        </div>
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="widget course-links-widget">
             <h5 class="widget-title">{{ 'FOOTER.CONTACT_US' | translate }}</h5>
             <ul class="list-unstyled menu-items">
+              <li><a href="mailto:depot@bib.umontreal.ca?subject=Interface de dépôt en libre accès"><img src="/assets/images/PaperPlaneTilt.svg" alt=""> {{ 'FOOTER.WRITE_TO_US' | translate }}</a></li>
               <li><a href="https://bib.umontreal.ca/nous-joindre/clavarder" target="_blank"><img src="/assets/images/Chats.svg" alt=""> {{ 'FOOTER.CHAT_WITH_US' | translate }}</a></li>
-              <li><a href="https://bib.umontreal.ca/nous-joindre/nous-ecrire" target="_blank"><img src="/assets/images/PaperPlaneTilt.svg" alt=""> {{ 'FOOTER.WRITE_TO_US' | translate }}</a></li>
-              <li><a href="#"><img src="/assets/images/Phone.svg" alt=""> {{ 'FOOTER.PHONE' | translate }}</a></li>
             </ul>
-            <p>
-              <a href="https://www.instagram.com/explore/locations/255950006/bibliotheques-udem/" target="_blank"><img src="/assets/images/InstagramLogo.svg" alt=""></a>
-              <a href="https://www.youtube.com/user/BibliothequesUdeM" target="_blank"><img src="/assets/images/YoutubeLogo.svg" alt=""></a>
-              <a href="https://twitter.com/bibUdeM" target="_blank"><img src="/assets/images/XLogo.svg" alt=""></a>
-              <a href="#"><img src="/assets/images/LinkedinLogo.svg" alt=""></a>
-            </p>
             <p><a href="#"><img src="/assets/images/Siren.svg" alt=""></a> {{ 'FOOTER.EMERGENCY' | translate }}</p>
           </div>
-        </div><!-- widget end -->
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="widget latest-news-widget">
-            <h5 class="widget-title">{{ 'FOOTER.ABOUT' | translate }}</h5>
-            <p [innerHTML]="'FOOTER.ABOUT_PLUS' | translate"></p>
-          </div>
-        </div><!-- widget end -->
+        </div>
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="widget newsletter-widget">
             <h5 class="widget-title">{{ 'FOOTER.SEEMORE' | translate }}</h5>
             <ul class="list-unstyled menu-items">
+              <li class="link-footer" [innerHTML]="'FOOTER.LINK_OPEN_ACCESS' | translate"></li>
               <li class="link-footer"  [innerHTML]="'FOOTER.LINK_POLITICS' | translate"></li>
               <li class="link-footer" [innerHTML]="'FOOTER.LINK_PAPYRUS' | translate"></li>
-              <li class="link-footer" [innerHTML]="'FOOTER.LINK_OPEN_ACCESS' | translate"></li>
             </ul>
           </div>
         </div>
