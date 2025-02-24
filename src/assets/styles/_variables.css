@@ -1,9 +1,8 @@
 :root {
-  --primaryColour: #0057ac;
+  --primaryColour: #024244;
   --darkBlue: #0B113A;
   --primaryColourLight: #EEF4F7;
   --selectColor: #52B782;
-  --baseFont: #444A55;
   --lightGrey: #dee2e6;
   --mediumGrey: #c0c0c0;
   --errorRed: #F04E24;
@@ -12,4 +11,17 @@
   --jaune: #FFCA40;
   --roseDark: #F4BDB7;
   --ligthBlue: #CCE2F3;
+  --green: #024244;
+  --autregreen: #249194;
+  --greensecondary: #04696c;
+  --darkgreen: #01282AFF;
+  --lightgreen: #4aa28b;
+  --extralightgreen: #e5fdf0;
+  --ligthblue:#E7EBEE;
+  --grayDark: #262525;
+  --gray-800: #343a40;
+  --gray-700: #37424D;
+  --gray-600: #37424D;
+  --gray-500: #607386;
+  --gray-400: #607386;
 }

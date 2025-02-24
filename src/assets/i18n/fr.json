@@ -2,7 +2,7 @@
   "PROJECT_TITLE": "Dépôt en libre accès - Bibliothèques - Université de Montréal",
   "TITLE": "Dépôt en libre accès",
   "HOME": "Accueil",
-  "FILE_UPLOADER": "<p>Transmettez les <b>versions acceptées pour publication</b> de vos articles en les glissant ci-dessous.</p> <p>L'équipe des bibliothèques s'occupera ensuite de les déposer dans <a href='https://papyrus.bib.umontreal.ca'>Papyrus</a>.</p>",
+  "FILE_UPLOADER": "<p>Transmettez les <b>versions acceptées pour publication</b> de vos articles en les glissant ci-dessous.</p> <p>L'équipe des bibliothèques s'occupera ensuite de les déposer dans <a href='https://papyrus.bib.umontreal.ca' target=\"_blank\">Papyrus</a>.</p>",
   "BROWSE_FILES": "parcourir les fichiers sur votre ordinateur.",
   "DRAG_DROP_FILES": "Glissez et déposez des fichiers ici pour les soumettre ou ",
   "FILE_LIMIT": "Tous les formats de fichiers sont autorisés, jusqu'à 500 Mo par fichier.",
@@ -15,7 +15,7 @@
   "LOGIN": "Se connecter",
   "LOGIN_TITLE": "Service de dépôt en libre accès",
   "LOGOUT": "Se déconnecter",
-  "LOGIN_DESCRIPTION": "<p>Une façon très simple de transmettre les <b>versions acceptées pour publication</b> de vos articles et l'équipe des bibliothèques les déposera en libre accès dans <a href='https://papyrus.bib.umontreal.ca'>Papyrus</a>.",
+  "LOGIN_DESCRIPTION": "<p>Une façon très simple de transmettre les <b>versions acceptées pour publication</b> de vos articles et l'équipe des bibliothèques les déposera en libre accès dans <a href='https://papyrus.bib.umontreal.ca' target=\"_blank\">Papyrus</a>.",
 
 
   "404_TITLE": "Oups ! Page non trouvée",

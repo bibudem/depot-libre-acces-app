@@ -39,7 +39,7 @@ a.hand-cursor:hover {
 
 .banner-content {
   position: relative;
-  z-index: 2; /* Pour que le contenu soit au-dessus de l'overlay */
+  z-index: 2;
 }
 
 .banner-content h1 {
@@ -53,14 +53,14 @@ a.hand-cursor:hover {
 }
 
 .navbar {
-  background-color: #fff; /* Couleur de fond de la navbar */
+  background-color: #fff;
   padding: 1rem;
 }
 
 /* Style pour le texte du logo */
 .logo-text {
   font-family: 'Lora', serif;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500;
   color: rgb(38, 37, 37);
   margin-top: 45px;

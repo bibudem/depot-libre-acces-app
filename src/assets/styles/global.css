@@ -7,8 +7,13 @@
 # Styles globaux
 --------------------------------------------------------------*/
 /* Définition de la taille de police par défaut en fonction de la taille de l'écran */
-html {
-  font-size: 14px;
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -20,7 +25,7 @@ html {
 /* Style de base pour le corps du document */
 body {
   font-size: 1rem;
-  color: var(--baseFont);
+  color: var(--gray-800);
   margin: 0;
   padding-bottom: 80px;
   box-sizing: border-box;
@@ -29,6 +34,14 @@ body {
 /* Style global pour l'en-tête */
 header {
   background: #747E88!important;
+}
+
+a {
+  color: var(--greensecondary);
+}
+
+a:hover {
+  color: var(--autregreen);
 }
 
 /* Espacement des sections */
@@ -54,7 +67,7 @@ small {
 }
 
 .btn-primary-bib:hover {
-  background: #081b9b;
+  background: var(--darkgreen);
 }
 
 /* Style pour les boutons d'alerte (rouge) */
@@ -71,7 +84,7 @@ small {
 /* Style pour les boutons gris */
 .btn-gray-bib {
   border-radius: 60px;
-  background: var(--baseFont);
+  background: var(--gray-700);
   color: white;
   padding: 10px 20px;
 }
@@ -81,9 +94,9 @@ small {
 }
 
 /* Style pour les boutons bleu foncé */
-.btn-darkBlue-bib {
+.btn-login-bib {
   border-radius: 60px;
-  background: var(--darkBlue);
+  background: var(--gray-600);
   display: flex;
   height: 50px;
   justify-content: center;
@@ -91,8 +104,8 @@ small {
   gap: 8px;
 }
 
-.btn-darkBlue-bib:hover {
-  background: #0a266b;
+.btn-login-bib:hover {
+  background: var(--gray-800);
 }
 
 /*--------------------------------------------------------------
@@ -151,7 +164,7 @@ small {
 
 .btn-g-transparent-bib:hover {
   background: #dee2e6;
-  color: var(--darkBlue);
+  color: var(--darkgreen);
 }
 
 /* Style pour les boutons principaux (yellow) */
@@ -172,7 +185,7 @@ small {
 --------------------------------------------------------------*/
 /* Définir la police Lora pour tous les titres h1 à h6 */
 h1, h2, h3, h4, h5, h6 {
-  color: var(--darkBlue);
+  color: var(--darkgreen);
   font-variant-numeric: lining-nums tabular-nums;
   font-feature-settings: 'liga' off, 'clig' off;
   font-family: 'Lora', sans-serif;
@@ -190,7 +203,6 @@ h5 {
 p, span, small {
   color: var(--darkGrey);
   font-family: 'Figtree', sans-serif;
-  line-height: 120%;
 }
 
 /*--------------------------------------------------------------
@@ -260,7 +272,7 @@ p, span, small {
 
 /* Fond bleu foncé pour les éléments */
 .bg-darkBlue {
-  background: var(--darkBlue);
+  background: var(--darkgreen);
 }
 
 /* Espacement et style pour les menus */
@@ -270,7 +282,7 @@ p, span, small {
   align-items: flex-start;
   gap: 30px;
   border-radius: 12px;
-  background: #E5F0F8;
+  background: var(--lightGrey);
   font-size: 18px;
 }
 
@@ -296,8 +308,9 @@ p, span, small {
 --------------------------------------------------------------*/
 /* Styles pour la page de connexion */
 .custom-section {
-  padding: 40px 0;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
+  min-height: 70vh;
+  padding: 10px;
 }
 
 .custom-image {
@@ -314,12 +327,14 @@ p, span, small {
   font-family: 'Lora', sans-serif;
   font-size: 38px;
   font-weight: bold;
-  color: #00407F;
+  color: var(--greensecondary);
 }
 
 .custom-description {
   color: #8E9299;
   margin-bottom: 20px;
+  line-height: 150%!important;
+  font-size: 20px!important;
 }
 
 /* Styles pour la page 404 */
@@ -330,18 +345,26 @@ p, span, small {
 
 .not-found-title {
   font-size: 38px;
-  color: #0057AC;
+  color: var(--greensecondary);
   margin-bottom: 20px;
 }
 
 /* ---------- Styles pour le footer ---------- */
 .link-footer a {
-  color: #CCE2F3!important;
+  color: var(--mediumGrey)!important;
+  text-decoration: none!important;
+}
+
+.link-footer p {
+  color:var(--mediumGrey)!important;
   text-decoration: none!important;
 }
 
 .link-footer a:hover {
-  color: #87c2e8 !important;
+  color: var(--primaryColourLight);
+}
+.link-emergency{
+  color: var(--lightGrey)!important;
 }
 
 /* Style pour le bouton navbar */
@@ -366,7 +389,7 @@ p, span, small {
 }
 
 .language-selector option {
-  background: #00407F;
+  background: var(--greensecondary);
   color: #eef4f7;
   font-size: 16px;
   padding: 5px 10px;
@@ -378,20 +401,23 @@ p, span, small {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 5px;
 }
 
 .menu-right .fas.fa-user {
   color: #eef4f7;
-  font-size: 18px;
-  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.bib-navbar {
+  border-bottom: var(--green) 2px solid;
 }
 
 /* ---------- Styles Responsive pour le Header ---------- */
 
 @media (max-width: 576px) {
   .logo-text {
-    font-size: 16px;
+    font-size: 22px;
     margin-top: 30px;
   }
 
@@ -412,7 +438,7 @@ p, span, small {
   }
 
   .logo-text {
-    font-size: 11px;
+    font-size: 22px;
     margin-top: 20px;
   }
 
@@ -452,5 +478,5 @@ p, span, small {
   background: #EEF4F7;
 }
 .hand-cursor {
-  cursor: pointer; /* Change le curseur en main lors du survol */
+  cursor: pointer;
 }
