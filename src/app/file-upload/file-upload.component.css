@@ -8,7 +8,7 @@
   transition: 0.22s ease;
   position: relative;
   font-weight: 500;
-  min-height: 250px;
+  height: auto;
 }
 
 .file-uploader .primary-icon {
@@ -100,7 +100,7 @@
 
 .file-uploader .file-uploader-body,
 .file-uploader .file-uploader-footer {
-  color: var(--baseFont);
+  color: var(--gray-400);
 }
 
 .file-uploader .file-uploader-body p {

@@ -102,6 +102,7 @@ small {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  color: var(--lightgreen);
 }
 
 .btn-login-bib:hover {
@@ -228,8 +229,8 @@ p, span, small {
   font-size: 18px;
 }
 
-.font-42 {
-  font-size: 42px;
+.font-48 {
+  font-size: 48px;
 }
 
 /*--------------------------------------------------------------
@@ -247,8 +248,8 @@ p, span, small {
   color: var(--primaryColour);
 }
 
-.text-lGrey {
-  color: var(--lightGrey);
+.text-icon {
+  color: var(--primaryColour);
 }
 
 .text-jaune {
@@ -325,15 +326,38 @@ p, span, small {
 
 .custom-title {
   font-family: 'Figtree', sans-serif;
-  font-weight: bold;
   color: var(--greensecondary);
   font-size: 2.4rem;
+  font-weight: 600;
+}
+
+/* Media query pour les écrans de taille moyenne  */
+@media (max-width: 768px) {
+  .custom-title {
+    font-size: 2.2rem;
+  }
+}
+/* Media query pour les écrans tablettes */
+@media (max-width: 768px) {
+  .custom-title {
+    font-size: 2rem;
+  }
+}
+
+/* Media query pour les écrans plus petits (smartphones, par exemple) */
+@media (max-width: 480px) {
+  .custom-title {
+    font-size: 1.8rem;
+  }
 }
 
 .custom-description {
   color: var(--gray-700);
   margin-bottom: 20px;
-  line-height: 150%!important;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: start;
+  margin-top: 10px;
 }
 
 /* Styles pour la page 404 */
@@ -403,7 +427,7 @@ p, span, small {
 }
 
 .menu-right .fas.fa-user {
-  color: #eef4f7;
+  color: var(--lightgreen);
   font-size: 14px;
 }
 
