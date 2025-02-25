@@ -7,9 +7,9 @@ import {MaintenanceComponent} from "./maintenance/maintenance.component";
 
 // Déclaration des routes
 const routes: Routes = [
-  { path: 'login', component: LoginComponent },
-  { path: 'file-upload', component: FileUploadComponent },
-  { path: '', redirectTo: '/file-upload', pathMatch: 'full' },  // Redirection par défaut
+  { path: 'connexion', component: LoginComponent },
+  { path: 'chargement', component: FileUploadComponent },
+  { path: '', redirectTo: '/chargement', pathMatch: 'full' },  // Redirection par défaut
   { path: 'maintenance', component: MaintenanceComponent },
   { path: '**', component: NotFoundComponent }
   //{ path: '**', redirectTo: '/maintenance' }

@@ -310,14 +310,13 @@ p, span, small {
 .custom-section {
   background-color: #ffffff;
   min-height: 70vh;
-  padding: 10px;
+  margin-top: 2.5rem;
 }
 
 .custom-image {
   border-radius: 16px;
   object-fit: cover;
   width: 700px;
-  margin-top:20px;
 }
 
 .text-content {
@@ -328,6 +327,7 @@ p, span, small {
   font-family: 'Figtree', sans-serif;
   font-weight: bold;
   color: var(--greensecondary);
+  font-size: 2.4rem;
 }
 
 .custom-description {
@@ -443,7 +443,6 @@ p, span, small {
 
   .menu-right {
     padding: 15px;
-    margin-left: 10%;
   }
 
   .menu-right .fas.fa-user {
