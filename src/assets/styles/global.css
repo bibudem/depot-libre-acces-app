@@ -331,10 +331,9 @@ p, span, small {
 }
 
 .custom-description {
-  color: #8E9299;
+  color: var(--gray-700);
   margin-bottom: 20px;
   line-height: 150%!important;
-  font-size: 20px!important;
 }
 
 /* Styles pour la page 404 */
