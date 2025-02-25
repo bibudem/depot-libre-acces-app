@@ -314,9 +314,10 @@ p, span, small {
 }
 
 .custom-image {
-  padding: 40px;
-  border-radius: 10px;
+  border-radius: 16px;
   object-fit: cover;
+  width: 700px;
+  margin-top:20px;
 }
 
 .text-content {
@@ -324,8 +325,7 @@ p, span, small {
 }
 
 .custom-title {
-  font-family: 'Lora', sans-serif;
-  font-size: 38px;
+  font-family: 'Figtree', sans-serif;
   font-weight: bold;
   color: var(--greensecondary);
 }
@@ -351,7 +351,7 @@ p, span, small {
 
 /* ---------- Styles pour le footer ---------- */
 .link-footer a {
-  color: var(--mediumGrey)!important;
+  color: var(--extralightgreen)!important;
   text-decoration: none!important;
 }
 
@@ -361,10 +361,10 @@ p, span, small {
 }
 
 .link-footer a:hover {
-  color: var(--primaryColourLight);
+  color: var(--lightgreen)!important;
 }
 .link-emergency{
-  color: var(--lightGrey)!important;
+  color: white!important;
 }
 
 /* Style pour le bouton navbar */
@@ -399,7 +399,6 @@ p, span, small {
 /* Section droite du menu (icône utilisateur, etc.) */
 .menu-right {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 5px;
 }
@@ -438,18 +437,21 @@ p, span, small {
   }
 
   .logo-text {
-    font-size: 22px;
+    font-size: 14px!important;
     margin-top: 20px;
   }
 
   .menu-right {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 5px;
+    padding: 15px;
+    margin-left: 10%;
   }
 
   .menu-right .fas.fa-user {
-    font-size: 18px;
+    font-size: 14px;
+  }
+
+  .custom-image {
+    margin-left:10px;
   }
 }
 /* ---------- Styles pour le Footer ---------- */

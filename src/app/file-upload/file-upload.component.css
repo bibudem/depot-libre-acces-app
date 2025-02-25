@@ -2,13 +2,13 @@
 @import 'src/assets/styles/_variables.css';
 
 .file-uploader {
-  width: 100%;
+  width: 90%;
   border: 2px dashed var(--lightGrey);
   border-radius: 6px;
   transition: 0.22s ease;
   position: relative;
   font-weight: 500;
-  min-height: 350px;
+  min-height: 250px;
 }
 
 .file-uploader .primary-icon {

@@ -1,46 +1,50 @@
-<div class="container text-center">
+<div class="container-fluid custom-section mt-5">
   <div class="row">
-    <div class="col-md-12 mx-auto mt-5 p-5">
-      <div  class="mb-3 text-grey" [innerHTML]="'FILE_UPLOADER' | translate"></div>
+    <div class="col-md-5">
+      <img src="assets/images/UdeM-Bibliothèques-6.jpg" alt="Image description" class="img-fluid custom-image float-right">
+    </div>
+    <div class="col-md-7 text-content">
+        <h1 class="custom-title" [innerHTML]="'LOGIN_TITLE' | translate"></h1>
+        <div  class="mb-4 text-grey" [innerHTML]="'FILE_UPLOADER' | translate"></div>
 
-      <div id="fileUploader" class="file-uploader p-3 mb-5 mt-5">
-        <div class="icon-container mb-2 mx-auto d-flex justify-content-center align-items-center">
+        <div id="fileUploader" class="file-uploader pt-2 pl-2 mr-5">
+          <div class="icon-container mx-auto d-flex justify-content-center align-items-center">
           <span class="fa-stack fa-lg">
             <span class="primary-icon fas fa-file-upload fa-stack-2x text-lGrey font-42"></span>
             <span class="downloading-icon fas fa-chevron-down fa-stack-1x text-lGrey font-42"></span>
           </span>
+          </div>
+
+          <div class="file-uploader-body">
+            <p class="file-upload-instructions">
+              <span class="hide-non-touch"> {{ 'DRAG_DROP_FILES' | translate }}</span>
+              <label for="fileInput" class="file-label">
+                <a class="hand-cursor">{{ 'BROWSE_FILES' | translate }}</a>
+              </label>
+              <input id="fileInput" type="file" hidden multiple />
+            </p>
+
+            <!-- Liste des fichiers sélectionnés -->
+            <ul id="fileList" class="list-group">
+              <li *ngFor="let file of selectedFiles; let i = index" class="list-group-item">
+                {{ i + 1 }}. {{ file.name }}
+                <span class="fas fa-trash-alt text-danger float-right" (click)="removeFile(i)"></span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="file-uploader-footer">
+            <small [innerHTML]="'FILE_LIMIT' | translate"></small>
+          </div>
+
+          <!-- Boutons d'upload et d'annulation -->
+          <div *ngIf="showUploadButtons" class="mt-4">
+            <button id="uploadButton" class="btn btn-primary-bib" (click)="uploadFiles()">{{ 'UPLOAD' | translate }}</button>
+            <!--<button (click)="cancelSelection()" class="btn btn-danger-bib ml-2 w-20">{{ 'CANCEL' | translate }}</button>-->
+          </div>
+
+          <p id="uploadMessage" class="upload-success"></p>
         </div>
-
-        <div class="file-uploader-body mb-5">
-          <p class="file-upload-instructions">
-            <span class="hide-non-touch"> {{ 'DRAG_DROP_FILES' | translate }}</span>
-            <label for="fileInput" class="file-label">
-              <a class="hand-cursor">{{ 'BROWSE_FILES' | translate }}</a>
-            </label>
-            <input id="fileInput" type="file" hidden multiple />
-          </p>
-
-          <!-- Liste des fichiers sélectionnés -->
-          <ul id="fileList" class="list-group">
-            <li *ngFor="let file of selectedFiles; let i = index" class="list-group-item">
-              {{ i + 1 }}. {{ file.name }}
-              <span class="fas fa-trash-alt text-danger float-right" (click)="removeFile(i)"></span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="file-uploader-footer">
-          <small [innerHTML]="'FILE_LIMIT' | translate"></small>
-        </div>
-
-        <!-- Boutons d'upload et d'annulation -->
-        <div *ngIf="showUploadButtons" class="mt-4">
-          <button id="uploadButton" class="btn btn-primary-bib w-20" (click)="uploadFiles()">{{ 'UPLOAD' | translate }}</button>
-          <!--<button (click)="cancelSelection()" class="btn btn-danger-bib ml-2 w-20">{{ 'CANCEL' | translate }}</button>-->
-        </div>
-
-        <p id="uploadMessage" class="upload-success"></p>
       </div>
     </div>
-  </div>
 </div>
