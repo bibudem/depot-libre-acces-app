@@ -1,11 +1,16 @@
+/*--------------------------------------------------------------
+# Import des fichiers CSS nécessaires
+--------------------------------------------------------------*/
+@import 'src/assets/styles/_variables.css';
+
 /* Styles pour le footer */
 .footer-section {
-  background-color: #0B113A;
+  background-color: var(--darkgreen);
   position: relative;
   overflow: hidden;
   z-index: 9;
   font-size: 14px;
-  color: #CCE2F3;
+  color: var(--lightGrey);
   font-weight: 400;
   line-height: 180%;
 }
@@ -38,13 +43,16 @@
 
 .footer-top .widget-title {
   font-size: 16px;
-  color: #CCE2F3;
+  color: var(--lightgreen);
   margin-bottom: 20px;
+  font-family: Figtree;
+  font-weight: 600;
+  font-size:18px;
 }
 
 .footer-top p,
 .footer-top .menu-items li {
-  color: #CCE2F3;
+  color: var(--lightGrey);
 }
 
 .footer-top .menu-items li {
@@ -58,7 +66,7 @@
 }
 
 .footer-top .menu-items li a:hover {
-  color: #1189d5;
+  color: var(--lightgreen);
 }
 
 .footer-top .menu-items li img {
@@ -72,14 +80,15 @@
 }
 
 .footer-bottom {
-  background-color: #0057AC;
-  padding: 20px 0;
+  background-color: var(--grayDark);
+  padding: 10px 0;
   text-align: center;
+  margin-bottom: -15px!important;
 }
 
 .footer-bottom .copy-right-text {
   font-size: 14px;
-  color: #CCE2F3;
+  color: var(--mediumGrey);
   margin-top: 20px;
 }
 
@@ -96,16 +105,16 @@
 }
 
 .footer-bottom .terms-privacy li a {
-  color: #CCE2F3;
+  color: var(--extralightgreen);
   text-decoration: none;
 }
 
 .footer-bottom .terms-privacy li a:hover {
-  color: #1189d5;
+  color: var(--extralightgreen);
 }
 
 .img-footer {
-  width: 120%;
+  width: 200px;
 }
 
 /* Responsivité */
