@@ -2,7 +2,7 @@
   "PROJECT_TITLE": "Dépôt en libre accès - Bibliothèques - Université de Montréal",
   "TITLE": "Dépôt en libre accès",
   "HOME": "Accueil",
-  "FILE_UPLOADER": "<p class=\"custom-description\">Transmettez les <b>manuscrits acceptés</b> par l'éditeur de vos articles en les glissant ci-dessous. L'équipe des bibliothèques s'occupera ensuite de les déposer dans <a href='https://papyrus.bib.umontreal.ca' target=\"_blank\">Papyrus</a>.</p>",
+  "FILE_UPLOADER": "<p class=\"custom-description\">Transmettez les <b>manuscrits acceptés</b> par l'éditeur de vos articles en les glissant ci-dessous. L'équipe des bibliothèques s'occupera ensuite de les déposer dans <a href='https://papyrus.bib.umontreal.ca' target=\"_blank\">Papyrus</a>.</p><p>En transmettant des fichiers, vous acceptez qu'ils soient publiés avec la <a href=\"https://libguides.bib.umontreal.ca/ld.php?content_id=37482009\" target=\blank\">licence de diffusion non exclusive</a> de Papyrus.</p>",
   "BROWSE_FILES": "parcourir les fichiers sur votre ordinateur.",
   "DRAG_DROP_FILES": "Glissez et déposez des fichiers ici pour les soumettre ou ",
   "FILE_LIMIT": "Tous les formats de fichiers sont autorisés, jusqu'à 500 Mo par fichier.",
