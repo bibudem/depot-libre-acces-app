@@ -1,14 +1,15 @@
 /*src/app/file-upload/file-upload.component.css */
 @import 'src/assets/styles/_variables.css';
+body { pointer-events: none; }
 
 .file-uploader {
-  width: 90%;
+  width: 100%;
   border: 2px dashed var(--lightGrey);
   border-radius: 6px;
   transition: 0.22s ease;
   position: relative;
   font-weight: 500;
-  height: auto;
+  pointer-events: auto;
 }
 
 .file-uploader .primary-icon {
@@ -24,14 +25,10 @@
   color: var(--selectColor);
 }
 
-.file-uploader .drop-cta {
-  display: none;
-}
 
 .file-uploader .downloading-icon {
-  position: absolute;
   color: var(--selectColor);
-  top: -50%;
+  top: -40%;
   opacity: 0;
 }
 
@@ -46,7 +43,7 @@
 }
 
 .file-uploader.is-dragover .file-upload-instructions {
-  display: none;
+  visibility: hidden;
 }
 
 .file-uploader.is-dragover .drop-cta {
@@ -78,7 +75,6 @@
 .file-uploader.is-dragover.is-wrong-filetype .text-danger {
   animation: fadeInGrow 0.4s ease;
   font-size: 1.5rem;
-  position: absolute;
   left: 50%;
   top: 50%;
   opacity: 1;

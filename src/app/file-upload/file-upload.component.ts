@@ -15,43 +15,61 @@ export class FileUploadComponent implements AfterViewInit {
   constructor(private fileUploadService: FileUploadService, private translate: TranslateService) {}
 
   ngAfterViewInit() {
+    // Gestion de la sélection de fichiers via l'input classique
     document.getElementById('fileInput')?.addEventListener('change', (event: any) => {
       const files = Array.from(event.target.files) as File[];
-      if (files.length > 0) {
-        this.selectedFiles.push(...files); // Ajouter tous les fichiers sélectionnés
-        this.showUploadButtons = true;
-      }
-    });
-
-    document.getElementById('fileUploader')?.addEventListener('drop', (event: any) => {
-      event.preventDefault();
-      const files = Array.from(event.dataTransfer.files) as File[];
       if (files.length > 0) {
         this.selectedFiles.push(...files);
         this.showUploadButtons = true;
       }
     });
 
+    // Permettre le drag-and-drop
+    const fileUploader = document.getElementById('fileUploader');
+
+    if (fileUploader) {
+      // Ajout de l'événement 'dragover'
+      fileUploader.addEventListener('dragover', (event) => {
+        event.preventDefault();
+        fileUploader.classList.add('is-dragover'); // Ajoute la classe pour hover
+      });
+
+      // Ajout de l'événement 'dragleave'
+      fileUploader.addEventListener('dragleave', () => {
+        fileUploader.classList.remove('is-dragover'); // Retire la classe pour hover
+      });
+
+      // Ajout de l'événement 'drop'
+      fileUploader.addEventListener('drop', (event: any) => {
+        event.preventDefault();
+        fileUploader.classList.remove('is-dragover'); // Retire la classe lors du dépôt
+
+        const files = Array.from(event.dataTransfer.files) as File[];
+        if (files.length > 0) {
+          this.selectedFiles.push(...files);
+          this.showUploadButtons = true;
+        }
+      });
+    }
+
+    // Gestion du clic sur le bouton d'upload
     document.getElementById('uploadButton')?.addEventListener('click', () => {
       this.uploadFiles();
     });
   }
 
-  // Fonction pour retirer un fichier de la sélection
   removeFile(index: number): void {
-    this.selectedFiles.splice(index, 1); // Retirer le fichier de la liste
+    this.selectedFiles.splice(index, 1);
     if (this.selectedFiles.length === 0) {
       this.showUploadButtons = false;
     }
   }
 
-  // Fonction pour annuler la sélection de tous les fichiers
   cancelSelection(): void {
     this.selectedFiles = [];
     this.showUploadButtons = false;
   }
 
-  // Démarrer le processus d'upload
   uploadFiles(): void {
     if (this.selectedFiles.length > 0) {
       this.selectedFiles.forEach((file) => {
