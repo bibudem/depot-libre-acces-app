@@ -75,12 +75,19 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage });
 
-// Route pour l'upload des fichiers
-app.post('/upload', upload.single('file'), (req, res) => {
-  if (req.file) {
-    // Enregistrer les informations dans le fichier CSV
-    logFileDetails(req.file);
+// Middleware pour vérifier l'authentification
+function checkAuth(req, res, next) {
+  if (!req.isAuthenticated || !req.isAuthenticated() || !req.user) {
+    // Redirection vers la page de connexion si non authentifié
+    return res.redirect('https://depot-libre-acces.bib.umontreal.ca/connexion');
+  }
+  next();
+}
 
+// Ajustement de la route upload avec la vérification
+app.post('/upload', checkAuth, upload.single('file'), async (req, res) => {
+  if (req.file) {
+    await logFileDetails(req.file, req.user);
     res.send({ message: 'Fichier téléchargé avec succès', file: req.file });
   } else {
     res.status(400).send({ message: 'Erreur lors du téléchargement du fichier' });
