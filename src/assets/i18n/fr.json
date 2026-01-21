@@ -13,6 +13,7 @@
   "NO_FILE_SELECTED": "Aucun fichier sélectionné",
   "UPLOAD_TITLE": "Déposer vos articles en libre accès: rien de plus facile!",
   "FILE":"Fichier",
+  "UPLOADING": "Fichier en cours de chargement…",
 
   "POPUP_TITLE": "Informations sur votre dépôt",
   "POPUP_MANUSCRIPT_QUESTION": "1. Ce document est un <a href=\"https://boite-outils.bib.umontreal.ca/trouver-evaluer/depot-institutionnel-papyrus?p=5392775\" target=\"_blank\">manuscrit accepté</a>",
