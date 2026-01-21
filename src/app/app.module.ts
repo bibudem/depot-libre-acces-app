@@ -1,5 +1,6 @@
 import { NotFoundComponent } from './not-found/not-found.component';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 import {AppComponent} from "./app.component";
 import {BrowserModule} from "@angular/platform-browser";
 import {FileUploadComponent} from "./file-upload/file-upload.component";
@@ -21,6 +22,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

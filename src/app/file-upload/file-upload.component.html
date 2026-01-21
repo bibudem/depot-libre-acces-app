@@ -23,27 +23,98 @@
             <input id="fileInput" type="file" hidden multiple />
           </p>
 
-          <!-- Liste des fichiers sélectionnés -->
-            <ul id="fileList" class="list-group p-3">
-              <li *ngFor="let file of selectedFiles; let i = index" class="list-group-item">
-                {{ i + 1 }}. {{ file.name }}
-                <span class="fas fa-trash-alt text-danger float-right" (click)="removeFile(i)"></span>
-              </li>
-            </ul>
+          <!-- Liste des fichiers sélectionnés (avant soumission) -->
+          <ul id="fileList" class="list-group p-3" *ngIf="selectedFiles.length > 0">
+            <li *ngFor="let file of selectedFiles; let i = index" class="list-group-item">
+              <div class="d-flex justify-content-between align-items-center">
+                <span>{{ i + 1 }}. {{ file.name }}</span>
+                <span class="fas fa-trash-alt text-danger hand-cursor" (click)="removeFile(i)"></span>
+              </div>
+            </li>
+          </ul>
           </div>
 
-        <!--<div class="file-uploader-footer">
-          <small [innerHTML]="'FILE_LIMIT' | translate"></small>
-        </div>-->
-
-          <!-- Boutons d'upload et d'annulation -->
+          <!-- Bouton d'envoi (déclenche le popup) -->
           <div *ngIf="showUploadButtons" class="mt-5">
-            <button id="uploadButton" class="btn btn-primary-bib" (click)="uploadFiles()">{{ 'UPLOAD' | translate }}</button>
-            <!--<button (click)="cancelSelection()" class="btn btn-danger-bib ml-2 w-20">{{ 'CANCEL' | translate }}</button>-->
+            <button id="uploadButton" class="btn btn-primary-bib" (click)="startUploadProcess()">
+              {{ 'UPLOAD' | translate }}
+            </button>
           </div>
 
           <p id="uploadMessage" class="upload-success"></p>
         </div>
       </div>
     </div>
+</div>
+
+<!-- Popup Modal -->
+<div *ngIf="showPopup" class="popup-overlay">
+  <div class="popup-container" (click)="$event.stopPropagation()">
+    <div class="popup-header">
+      <div>
+        <h3>{{ 'POPUP_TITLE' | translate }}</h3>
+        <p class="highlight-text-dashed">
+          <i class="fas fa-file"></i> 
+          {{ 'FILE' | translate }} {{ currentFileIndex + 1 }}/{{ selectedFiles.length }}:
+          <strong>{{ getCurrentFile()?.name }}</strong>
+        </p>
+      </div>
+      <button class="close-btn" (click)="closePopup()">&times;</button>
+    </div>
+    
+    <div class="popup-body">
+      <!-- Question 1: Manuscrit accepté -->
+      <div class="form-group">
+        <label class="form-label required" [innerHTML]="'POPUP_MANUSCRIPT_QUESTION' | translate">
+        </label>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input type="radio" name="manuscript" value="OUI" [(ngModel)]="isAcceptedManuscript">
+            {{ 'YES' | translate }}
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="manuscript" value="NON" [(ngModel)]="isAcceptedManuscript">
+            {{ 'NO' | translate }}
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 2: Licence Creative Commons -->
+      <div class="form-group">
+        <label class="form-label required" [innerHTML]="'POPUP_LICENSE_QUESTION' | translate">
+        </label>
+        <select class="form-control" [(ngModel)]="selectedLicense">
+          <option value="">{{ 'SELECT_OPTION' | translate }}</option>
+          <option value="aucune">{{ 'LICENSE_NONE' | translate }}</option>
+          <option value="CC-BY">CC-BY ({{ 'LICENSE_FRQ_COMPLIANT' | translate }})</option>
+          <option value="CC-BY-ND">CC-BY-ND ({{ 'LICENSE_FRQ_CONDITIONAL' | translate }})</option>
+          <option value="CC-BY-SA">CC-BY-SA</option>
+          <option value="CC-BY-NC">CC-BY-NC</option>
+          <option value="CC-BY-NC-SA">CC-BY-NC-SA</option>
+          <option value="CC-BY-NC-ND">CC-BY-NC-ND</option>
+          <option value="CC-0">CC-0</option>
+        </select>
+      </div>
+
+      <!-- Question 3: Commentaires -->
+      <div class="form-group">
+        <label class="form-label">
+          {{ 'POPUP_COMMENTS' | translate }}
+        </label>
+        <textarea class="form-control" rows="4" [(ngModel)]="comments" 
+                  [placeholder]="'POPUP_COMMENTS_PLACEHOLDER' | translate"></textarea>
+      </div>
+
+      <div class="form-note">
+        <small>* {{ 'REQUIRED_FIELDS_NOTE' | translate }}</small>
+      </div>
+    </div>
+
+    <div class="popup-footer">
+      <button class="btn btn-secondary btn-gray-bib" (click)="closePopup()">{{ 'CANCEL' | translate }}</button>
+      <button class="btn btn-primary-bib" (click)="submitPopup()" [disabled]="!isFormValid()">
+        {{ currentFileIndex < selectedFiles.length - 1 ? ('NEXT' | translate) : ('SUBMIT' | translate) }}
+      </button>
+    </div>
+  </div>
 </div>

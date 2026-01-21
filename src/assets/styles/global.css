@@ -60,7 +60,7 @@ small {
 --------------------------------------------------------------*/
 /* Style pour les boutons principaux (bleu) */
 .btn-primary-bib {
-  border-radius: 60px;
+  border-radius: 60px!important;
   background: var(--primaryColour);
   color: white;
   padding: 10px 20px;
@@ -72,7 +72,7 @@ small {
 
 /* Style pour les boutons d'alerte (rouge) */
 .btn-danger-bib {
-  border-radius: 60px;
+  border-radius: 60px!important;
   background: var(--errorRed);
   color: white;
 }
@@ -83,7 +83,7 @@ small {
 
 /* Style pour les boutons gris */
 .btn-gray-bib {
-  border-radius: 60px;
+  border-radius: 60px!important;
   background: var(--gray-700);
   color: white;
   padding: 10px 20px;
@@ -504,3 +504,13 @@ p, span, small {
 .hand-cursor {
   cursor: pointer;
 }
+
+.highlight-text-dashed {
+  border: 1px dashed #249194;
+  padding: 12px 15px;
+  border-radius: 8px;
+  color: #0B113A;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+
